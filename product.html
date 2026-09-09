@@ -1,444 +1,804 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><title>Rise Elixir — Adaptogenesis</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>html{background:#E7E1D2}body{max-width:480px;margin:0 auto;position:relative;transform:translateZ(0);box-shadow:0 0 60px rgba(30,26,20,.18)}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"secondary":"#516442","surface-container":"#f2ede4","surface-container-high":"#ece8df","on-error-container":"#93000a","primary-fixed":"#c7ecce","surface-dim":"#ded9d1","primary":"#32533c","inverse-surface":"#32302a","on-primary-fixed-variant":"#2e4e37","on-primary-container":"#c5eacc","primary-container":"#4a6b53","inverse-on-surface":"#f5f0e7","tertiary-fixed":"#ffdbd0","on-tertiary-fixed":"#3a0a00","tertiary-fixed-dim":"#ffb59f","error":"#ba1a1a","on-surface-variant":"#424842","tertiary":"#7f351d","tertiary-container":"#9d4c32","muted-border":"#E4DDD0","outline-variant":"#c2c8c0","secondary-container":"#d4eabe","on-tertiary-fixed-variant":"#793019","outline":"#727972","on-secondary-fixed-variant":"#3a4c2c","herbaceous-mint":"#9DB39F","deep-spruce":"#14211A","on-secondary-container":"#576a48","forest-ink":"#1B2A22","on-background":"#1d1c16","linen-surface":"#FBF9F5","on-surface":"#1d1c16","on-secondary-fixed":"#102005","on-tertiary-container":"#ffd8cd","on-secondary":"#ffffff","inverse-primary":"#abcfb2","secondary-fixed":"#d4eabe","error-container":"#ffdad6","surface-container-low":"#f8f3ea","surface-bright":"#fef9f0","on-primary-fixed":"#01210f","surface":"#fef9f0","primary-fixed-dim":"#abcfb2","surface-container-lowest":"#ffffff","surface-variant":"#e7e2d9","background":"#fef9f0","on-tertiary":"#ffffff","surface-tint":"#45664e","secondary-fixed-dim":"#b8cda4","on-primary":"#ffffff","on-error":"#ffffff","surface-container-highest":"#e7e2d9","chartreuse-vitality":"#ADC743"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-3xl":"4.5rem","space-md":"1rem","container-max":"1280px","space-2xl":"3rem","space-xs":"0.5rem","gutter-desktop":"2rem","gutter-mobile":"1rem","space-4xl":"6rem","space-lg":"1.5rem","space-sm":"0.75rem","space-xl":"2rem","space-2xs":"0.25rem","gutter-tablet":"1.5rem"},fontFamily:{"display-hero-mobile":["EB Garamond"],"body-lg":["Plus Jakarta Sans"],"label-numeric":["Plus Jakarta Sans"],"subheading-editorial":["EB Garamond"],"label-button":["Plus Jakarta Sans"],"headline-sm":["EB Garamond"],"label-caps":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md-mobile":["EB Garamond"],"headline-lg-mobile":["EB Garamond"],"headline-md":["EB Garamond"],"display-hero":["EB Garamond"],"body-md":["Plus Jakarta Sans"],"headline-lg":["EB Garamond"]},fontSize:{"display-hero-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-numeric":["14px",{"lineHeight":"20px","fontWeight":"500"}],"subheading-editorial":["18px",{"lineHeight":"26px","fontWeight":"400"}],"label-button":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md-mobile":["24px",{"lineHeight":"30px","fontWeight":"500"}],"headline-lg-mobile":["30px",{"lineHeight":"36px","fontWeight":"400"}],"headline-md":["32px",{"lineHeight":"38px","fontWeight":"500"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><img alt="Adaptogenesis Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYjHetQdThD9rLfQaIhrqOqJmdzIjQVt-JVvOqIigZVq2KUb3qLWDDgt8Kew7v6-mp3hlhRt43VWLf9vBjDYbAyNHZsoPDt96RmznmqwCYhYn0Cl21x73saBRXL8DiBk4UQEPGF826PxQK7abqVV79TIKMkjAk5QQoMqxVo7x0BrA_DB7uammZJTr9VVdLLGmROB56G3g-PtvCR-auDrB-Ek-k0CQp6AXN0am9WzmYgYoOtrIqMvjg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-forest-ink tracking-tight leading-none">Adaptogenesis</span><span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Discover Home</span></div></div><div class="flex items-center gap-space-2xs"><button aria-label="Search Formulas" class="w-11 h-11 flex items-center justify-center text-forest-ink hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Shopping Bag" class="w-11 h-11 relative flex items-center justify-center text-forest-ink hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-2 right-1.5 w-4 h-4 rounded-full bg-tertiary text-on-tertiary font-label-caps text-[10px] leading-none flex items-center justify-center font-semibold shadow-sm">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-2xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-28"><div class="flex flex-col w-full text-forest-ink">
-<!-- Top Breadcrumb & Archival Tag -->
-<section class="px-6 pt-4 pb-2">
-<nav class="flex items-center gap-2 font-label-caps text-label-caps text-secondary tracking-widest uppercase">
+<html class="scroll-smooth" lang="en"><head><title>Rise Elixir — Adaptogenesis</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-bright":"#fef9f0","tertiary-fixed":"#ffdbd0","inverse-on-surface":"#f5f0e7","on-error":"#ffffff","error":"#ba1a1a","on-surface":"#1d1c16","chartreuse-vitality":"#ADC743","secondary":"#516442","on-tertiary":"#ffffff","on-secondary":"#ffffff","on-primary-container":"#c5eacc","outline-variant":"#c2c8c0","on-tertiary-fixed-variant":"#793019","secondary-fixed":"#d4eabe","surface-container-low":"#f8f3ea","inverse-primary":"#abcfb2","on-secondary-fixed-variant":"#3a4c2c","forest-ink":"#1B2A22","on-background":"#1d1c16","on-secondary-fixed":"#102005","on-primary":"#ffffff","surface-container-highest":"#e7e2d9","secondary-fixed-dim":"#b8cda4","on-primary-fixed":"#01210f","surface":"#fef9f0","primary":"#32533c","tertiary-container":"#9d4c32","surface-container-lowest":"#ffffff","tertiary":"#7f351d","herbaceous-mint":"#9DB39F","muted-border":"#E4DDD0","surface-dim":"#ded9d1","tertiary-fixed-dim":"#ffb59f","inverse-surface":"#32302a","on-error-container":"#93000a","on-primary-fixed-variant":"#2e4e37","outline":"#727972","primary-fixed-dim":"#abcfb2","surface-container-high":"#ece8df","secondary-container":"#d4eabe","surface-variant":"#e7e2d9","primary-fixed":"#c7ecce","surface-tint":"#45664e","error-container":"#ffdad6","deep-spruce":"#14211A","on-tertiary-container":"#ffd8cd","background":"#fef9f0","surface-container":"#f2ede4","primary-container":"#4a6b53","on-surface-variant":"#424842","on-secondary-container":"#576a48","linen-surface":"#FBF9F5","on-tertiary-fixed":"#3a0a00"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xs":"0.5rem","container-max":"1280px","space-xl":"2rem","space-2xs":"0.25rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-3xl":"4.5rem","space-4xl":"6rem","space-2xl":"3rem","gutter-desktop":"2rem","space-sm":"0.75rem","space-md":"1rem","gutter-tablet":"1.5rem"},fontFamily:{"display-hero":["EB Garamond"],"headline-lg-mobile":["EB Garamond"],"headline-lg":["EB Garamond"],"label-button":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display-hero-mobile":["EB Garamond"],"label-caps":["Plus Jakarta Sans"],"subheading-editorial":["EB Garamond"],"headline-sm":["EB Garamond"],"headline-md":["EB Garamond"],"label-numeric":["Plus Jakarta Sans"],"headline-md-mobile":["EB Garamond"],"body-md":["Plus Jakarta Sans"]},fontSize:{"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg-mobile":["30px",{"lineHeight":"36px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-button":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-hero-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"600"}],"subheading-editorial":["18px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","fontWeight":"500"}],"headline-md":["32px",{"lineHeight":"38px","fontWeight":"500"}],"label-numeric":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md-mobile":["24px",{"lineHeight":"30px","fontWeight":"500"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(27,42,34,0.04)]"><div class="bg-deep-spruce text-surface-container-low px-gutter-mobile lg:px-gutter-desktop"><div class="max-w-container-max mx-auto h-9 flex items-center justify-between font-label-caps text-label-caps tracking-widest uppercase"><div class="flex items-center gap-space-xs text-herbaceous-mint"><span class="w-1.5 h-1.5 rounded-full bg-chartreuse-vitality animate-pulse"></span><span>Baja California Sur Sanctuary &amp; Laboratory • Est. 2021</span></div><div class="hidden md:flex items-center gap-space-md"><span class="text-surface-container-high">Complimentary Cold-Chain Botanical Infusions on Orders Over $140 USD</span></div><div class="flex items-center gap-space-sm"><span class="hover:text-chartreuse-vitality transition-colors cursor-pointer">USD ($)</span><span class="text-primary-container">|</span><span class="hover:text-chartreuse-vitality transition-colors cursor-pointer">Todos Santos / San José</span></div></div></div><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><button aria-label="Open Botanical Navigation Drawer" class="lg:hidden p-space-2xs text-forest-ink hover:text-primary transition-colors focus:outline-none" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full');document.getElementById('mobile-backdrop').classList.remove('hidden');" type="button"><span class="material-symbols-outlined text-[26px]">menu</span></button><a class="flex items-center gap-space-sm group text-decoration-none" data-path="dispensary" href="index.html"><img alt="Minimalist modern botanical emblem logo for 'ADAPTOGENESIS', featuring an elegant stylized medicinal herb leaf branch inside an organic fine circular crest, luxury apothecary aesthetic, clean vector line work, dark forest green #23372B on transparent background. Design context: - Primary color: #4a6b53 - Font: ebGaramond - Mode: light - Roundness: rounded-sm . The logo should be visually consistent with these brand tokens." class="h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XzAmsUKA1VENAVLe622aM5lJLt1cB66xEk_ULVqkeWkgak_f0D17PUX8ea1lIT-fAPmIQpDVsvu2q1QLqdXbD1eXj9xtDdDzVNa0opw_fV7DgoiokAdKne-XCTRzEn6VTo3E6RV7ifaBWA-dnbEVKUih4-BsC_M0cEWbbYOrGYXQ8ko6XQCo24G_EAPlnYH2Z5SVzltFuGCl3bHqyxhJjAyOQeQqeQ7rF73NApEkvu8i3G6ublFCHgMjM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-forest-ink tracking-tight font-display-hero leading-none">ADAPTOGENESIS</span><span class="font-label-caps text-label-caps tracking-[0.2em] text-secondary uppercase mt-0.5">Apothecary &amp; Gut Terrain</span></div></a></div><nav class="hidden lg:flex items-center gap-space-lg font-label-button text-label-button tracking-wide" data-active-classes="bg-secondary-container text-on-secondary-container font-medium rounded-full"><a aria-current="page" class="px-space-sm py-space-2xs transition-colors bg-secondary-container text-on-secondary-container font-medium rounded-full" data-path="dispensary" href="#">Dispensary</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="clinical-formulas" href="#">Formulas</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="biomefx-clinic" href="#">BiomeFx Clinic</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="terrain-philosophy" href="#">Terrain Philosophy</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-abbie" href="#">About Abbie</a><a class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="botanical-journal" href="#">Journal</a></nav><div class="flex items-center gap-space-md"><button aria-label="Search Dispensary Monographs" class="text-on-surface-variant hover:text-forest-ink transition-colors p-space-2xs" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Consultation Portal Account" class="hidden sm:flex text-on-surface-variant hover:text-forest-ink transition-colors p-space-2xs" type="button"><span class="material-symbols-outlined text-[22px]">spa</span></button><button aria-label="Apothecary Basket" class="relative flex items-center p-space-2xs text-forest-ink hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">local_mall</span><span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary text-on-tertiary font-label-numeric text-[10px] flex items-center justify-center font-bold">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(27,42,34,0.12)] ml-space-2xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed inset-0 bg-forest-ink/40 backdrop-blur-sm z-50 hidden transition-opacity duration-300" id="mobile-backdrop" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');this.classList.add('hidden');"></div><aside class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-surface-bright shadow-[0_24px_48px_-8px_rgba(20,33,26,0.14)] z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-space-xl overflow-y-auto" id="mobile-drawer"><div class="flex flex-col gap-space-xl"><div class="flex items-center justify-between pb-space-md"><span class="font-headline-sm text-headline-sm text-forest-ink font-display-hero">Botanical Index</span><button aria-label="Close Drawer" class="p-space-2xs text-on-surface-variant hover:text-forest-ink" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full');document.getElementById('mobile-backdrop').classList.add('hidden');" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button></div><nav class="flex flex-col gap-space-xs font-label-button text-label-button" data-active-classes="bg-secondary-container text-on-secondary-container font-medium rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-all flex items-center justify-between bg-secondary-container text-on-secondary-container font-medium rounded-lg" data-path="dispensary" href="#">Dispensary <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all flex items-center justify-between" data-path="clinical-formulas" href="#">Formulas <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all flex items-center justify-between" data-path="biomefx-clinic" href="#">BiomeFx Clinic <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all flex items-center justify-between" data-path="terrain-philosophy" href="#">Terrain Philosophy <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all flex items-center justify-between" data-path="about-abbie" href="#">About Abbie <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface rounded-lg transition-all flex items-center justify-between" data-path="botanical-journal" href="#">Journal <span class="material-symbols-outlined text-sm opacity-40">chevron_right</span></a></nav></div><div class="pt-space-xl flex flex-col gap-space-md"><div class="p-space-md bg-surface-container-low rounded-xl"><span class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Sanctuary Hours</span><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Todos Santos Dispensary &amp; Tea Bar<br/>Tue – Sat • 9:00 AM – 5:30 PM MST</p></div><button class="w-full bg-primary hover:bg-primary-container text-on-primary py-space-sm rounded-lg font-label-button text-label-button transition-colors" type="button">Book Biome Consultation</button></div></aside><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Top Utility Nav -->
+<div class="w-full bg-surface-container-low/60 py-space-xs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+<nav class="flex items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
 <a class="hover:text-primary transition-colors" href="collection.html">Dispensary</a>
-<span class="text-secondary/50">/</span>
-<a class="hover:text-primary transition-colors" href="collection.html">Elixirs</a>
-<span class="text-secondary/50">/</span>
+<span class="text-herbaceous-mint font-display-hero text-sm">/</span>
+<a class="hover:text-primary transition-colors" href="collection.html">Dual-Extracts &amp; Elixirs</a>
+<span class="text-herbaceous-mint font-display-hero text-sm">/</span>
 <span class="text-forest-ink font-semibold">Rise Elixir</span>
 </nav>
-</section>
-<!-- Product Media Showcase -->
-<section class="px-6 pt-2 pb-5 flex flex-col gap-3">
-<div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-surface-container-low flex flex-col">
-<div class="relative w-full aspect-[4/5] overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Editorial luxury apothecary amber glass dropper bottle labelled Rise Elixir Adaptogenesis resting on a sun-warmed travertine stone slab surrounded by dried cordyceps mushrooms, ashwagandha root cuttings, and delicate holy basil sprigs, shot in soft natural afternoon sunlight with warm earth tones, deep sage greens, and fine linen textures in the style of Aesop and Rowse." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6Esb-DWuQ5ufgIwxWAgO6Il8zFEKm7gu56BcdDZm4ZGXR9yrzPdJUm1c_1tgcNJPNfJUHrB2FgJJggnJDdlHrVCaKcMms2W91VBShqJqc_lbb5beEKB-RfjIxrX9FJ6yaZo2orgHMOQFPjUiJ0dtowj80mwP3hm4O8QaFVmirj5q-A9SmWrgmmBpbUInKn6tEA0jgM6fr_mJ6OnTYbewl7zwzq5LN0-CISGWCw-G4lve3wk5Un5zM"/>
-<!-- Batch Archival Badge (Top Corner) -->
-<div class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md rounded-full px-3 py-1 text-forest-ink shadow-sm">
-<span class="font-label-caps text-[10px] tracking-widest uppercase text-secondary">Harvest '24 • Batch 08</span>
+<div class="hidden md:flex items-center gap-space-sm font-label-caps text-label-caps text-secondary">
+<span class="inline-block w-2 h-2 rounded-full bg-chartreuse-vitality animate-pulse"></span>
+<span>Batch 08 Bottled • In Active Inventory</span>
 </div>
-<!-- Alchemical Emblem Overlay (Top Right) -->
-<div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/85 backdrop-blur-md flex items-center justify-center text-forest-ink shadow-sm">
-<span class="material-symbols-outlined text-[16px] text-primary">eco</span>
 </div>
-<!-- Botanical Batch Details Floating Card (Bottom Pill) -->
-<div class="absolute bottom-3 inset-x-3 bg-deep-spruce/90 backdrop-blur-md rounded-xl p-2.5 text-surface-bright flex items-center justify-between shadow-md">
+</div>
+<!-- Main Hero Commerce Split -->
+<section class="w-full py-8 lg:py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- Left: Image Gallery & Botanical Showcase -->
+<div class="lg:col-span-6 xl:col-span-7 flex flex-col gap-4 lg:sticky lg:top-28">
+<!-- Main Hero Showcase -->
+<div class="relative w-full aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-md group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial close-up luxury photograph of Rise Elixir amber glass apothecary bottle with matte black pipette dropper resting upon textured Baja travertine stone. Surrounding it are vibrant orange wild Cordyceps militaris fronds, dried holy basil leaves, and soft morning desert sunlight streaming from high angle creating soft warm shadows. Miron violet glass tint, deep olive green reflections, and botanical calm." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU4Utn_CzFw5Hlm0atRx0_oiIpQkUqwSWZBBa-RUwN9s4DefbRx7tvirsv0GttzmBlSMN5dmWMhMEIUQtpwJ85WgpXA7JnaQr5osjkADP0_FGzxp2_kcfuTpQI343vNoYqpj7BUHoioMYTkWG2c6_ArqowEYX1ieUf5sry33iuwZ7DAhiBeOjwTz_akWpJM6qw278x0zXYHMi6Gh67yyliF8Ucr2Jc52qHilvIQXQICHe1-UQM0w27"/>
+<!-- Badges & Origin Markers -->
+<div class="absolute top-4 left-4 flex flex-col gap-2 pointer-events-none">
+<span class="bg-forest-ink/90 backdrop-blur-md text-surface-bright px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest uppercase">
+                Harvest ’24 • Batch 08
+              </span>
+<span class="bg-surface-container-lowest/90 backdrop-blur-md text-forest-ink px-3 py-1 rounded-full font-label-caps text-[10px] tracking-widest uppercase shadow-sm">
+                50ml Miron Violet Glass
+              </span>
+</div>
+<div class="absolute bottom-4 right-4 pointer-events-none">
+<div class="bg-surface-bright/95 backdrop-blur-md p-3 rounded-lg shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-secondary">Ultrasonic Potency</span>
+<span class="font-headline-sm text-sm font-display-hero text-forest-ink">8:1 Dual Hydro-Ethanoic</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Thumbnails Row -->
+<div class="grid grid-cols-4 gap-3 sm:gap-4">
+<button aria-label="View Apothecary Bottle Hero" class="aspect-square rounded-lg overflow-hidden bg-surface-container p-0.5 shadow-sm transition-all focus:outline-none ring-2 ring-primary" onclick="selectThumbnail(0, this)" type="button">
+<img class="w-full h-full object-cover rounded-md" data-alt="Rise Elixir 50ml dropper bottle standing tall on raw travertine stone with desert plant stems in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpUVRKR3z6H4lkEme1tPDaETho5Z30ghDUpF0IXCebg6c8hJ62p7bxNE54sVbJqDRSjQRZCErOkZ7fZl6sBAqHbg8qbyTDADMvydjlFceEoSj8Gan2nO44p2W9jcjaLonBuGnw3u_JayFHnjhuD4uaL43huuB6BrvQ_rpwo1tAw0JxM1SQ3S3iCGnttEOOAi3p5VjVLQtqJ7pHtnSkJSS3fXcW8rB2u7z7h9gf62pnqslPIyIJGRrz"/>
+</button>
+<button aria-label="View Dropper Sublingual Ritual" class="aspect-square rounded-lg overflow-hidden bg-surface-container p-0.5 shadow-sm transition-all focus:outline-none opacity-70 hover:opacity-100" onclick="selectThumbnail(1, this)" type="button">
+<img class="w-full h-full object-cover rounded-md" data-alt="Dropper dispensing a rich translucent dark amber botanical dual extract liquid drop into pure spring water in a studio setting, warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-PnQtAzJQcqZPu_ERRhEzB71pRx87DbiYvZHqSUN0JVMSGXduX85HJAvKIZM7ks-9xxufv-VkKVpeIQc6xAPs7Q9Mhuduv8GiZN2jAKjnRAHHdC5-Mej3hA0JoHR7m9YjAGPVzRVeryC4qZqfhHz7DeAWAmFoEzAoCRIPfRXKmQhM2-MRXNTjC6662Ep30Ob3CUy7ivXupaSZIi4w1CnnCHholN82mF55aDu5FN3-Uq6Y3y_iqdO_"/>
+</button>
+<button aria-label="View Botanical Assay Ingredients" class="aspect-square rounded-lg overflow-hidden bg-surface-container p-0.5 shadow-sm transition-all focus:outline-none opacity-70 hover:opacity-100" onclick="selectThumbnail(2, this)" type="button">
+<img class="w-full h-full object-cover rounded-md" data-alt="Flatlay composition of dried orange cordyceps mushrooms, rough whole ashwagandha roots, and fresh holy basil leaves arranged over tactile linen paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLKjFLA71f9TLkfKHdoJ8i0HfnevR_0e85P_E0e2DD7QneJpGHcr2zKxrfz_46RQMORmIbILPdFEeSiW4x9g9_qVaYV2zAu_MyXDmTPVZU3IiqbZ4nag6jJ4ewdEpFmq_9_65435DSivSSO2gkmtUt2O0Vfr_HL28XqXvJ9hjUBU4SsDEMM3H7j1aq1gWIeZMO-6PnkD5fjByuP_ge3ynUnt3ZdvmAsmdWTBJDHYwISDWaHxnKc7rO"/>
+</button>
+<button aria-label="View Sustainable Apothecary Packaging" class="aspect-square rounded-lg overflow-hidden bg-surface-container p-0.5 shadow-sm transition-all focus:outline-none opacity-70 hover:opacity-100" onclick="selectThumbnail(3, this)" type="button">
+<img class="w-full h-full object-cover rounded-md" data-alt="Luxury embossed recycled paper cylinder package with deep spruce letterpress calligraphy typography for Adaptogenesis Rise Elixir" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6JNciDWfT7ThR0c7LwJz5npOsbjqm4456Wka1yqC9mqx4ePRGLdfIbpfIUj52DKvOExtUvEHWLOabMdOSkNoUwdbpeCSC7wVCbZOx7CIVCGuHVTpvxDN3KGCLbmitwTaJr28rJl4xZYkibE5eKMb8UWrYctl6ZeTv_GhojNdEKTOYe9idamatBTbyGSgylw_9YBLHEcsF1T31Y2hVEe-_yxknUPt1HWwvGgFnMhklZi5OnUM8c2Qg"/>
+</button>
+</div>
+<!-- Laboratory & Terrain Purity Visual Meter -->
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-3 mt-2">
+<div class="flex items-center justify-between text-forest-ink">
 <div class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 rounded-full bg-chartreuse-vitality animate-pulse"></span>
-<span class="font-label-caps text-[10px] tracking-wider uppercase text-linen-surface">50ml Amber Glass • Dual Extraction</span>
+<span class="material-symbols-outlined text-secondary text-lg">science</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Metagenomic &amp; Potency Verification</span>
 </div>
-<span class="font-label-caps text-[10px] tracking-widest text-herbaceous-mint">1 / 4 Notes</span>
+<span class="font-label-numeric text-xs text-primary font-semibold">ISO-17025 Certified</span>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container-lowest p-2.5 rounded-lg text-center">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Cordycepin</span>
+<span class="font-headline-sm text-base font-display-hero text-forest-ink font-semibold">1.42%</span>
+<span class="font-label-numeric text-[9px] text-secondary block">HPLC Standardized</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg text-center">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Withanolides</span>
+<span class="font-headline-sm text-base font-display-hero text-forest-ink font-semibold">&gt; 5.0%</span>
+<span class="font-label-numeric text-[9px] text-secondary block">Full Spectrum KSM</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg text-center">
+<span class="font-label-caps text-[10px] text-on-surface-variant block uppercase">Polysaccharides</span>
+<span class="font-headline-sm text-base font-display-hero text-forest-ink font-semibold">42.8%</span>
+<span class="font-label-numeric text-[9px] text-secondary block">Beta-1,3/1,6-Glucans</span>
 </div>
 </div>
 </div>
-<!-- Thumbnail Strip & Botanical Pagination -->
-<div class="grid grid-cols-4 gap-2 pt-1">
-<button class="relative rounded-lg overflow-hidden aspect-square bg-surface-container ring-offset-2 ring-1 ring-primary transition-all">
-<img class="w-full h-full object-cover" data-alt="Close-up detail of amber glass dropper releasing an organic deep amber botanical tincture drop, studio botanical lighting on warm cream parchment background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOYPlvMx-ROVD9SaAoEZDNJHZlU2G77Acqro_IthwX--K5a_Oeqpx8djomqD2mpXxzrGhUKPMD-AqoN27jsalBFuueu73ejrzyYq0J1i2fwfOOdnHiYhtTg9Ynxrhgq7qQcsC-1Ly_FyUra3sbkRFsiF07L_UzfFbUra5CZi41IiYlNtb3TMeVQV4rDhumH9RUroV1Wqk17wHPdiS9Skd-L6OiM4nzqMAgypRy7la7cprrIIashPB9"/>
-</button>
-<button class="rounded-lg overflow-hidden aspect-square bg-surface-container opacity-70 hover:opacity-100 transition-opacity">
-<img class="w-full h-full object-cover" data-alt="Whole wild-harvested Cordyceps militaris and golden organic ashwagandha roots displayed on handmade terracotta plate beside apothecary beaker." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX3n7VM34ivXRhzPs2SDUUPXb_3Msqfwimj8Ncj7dl1hhHnOsbHVWSVY9LF4kbWVYgcuDp3JuC7kdoENcRyn2VzzI8qSG5x1ctdeD4UzjFivuGEPwcfzdZiOAYtc2RtXBW6MU4FCIlqFQlqXVFbi9kvdosJJF3Bq185u0Gj3Vh1nP-qxdtXfnompffQW-unTkk4fwIrJiB4zR5oFjpuryQAgpQAinRz4PMQXueJFqmn4VOWsV9lDvB"/>
-</button>
-<button class="rounded-lg overflow-hidden aspect-square bg-surface-container opacity-70 hover:opacity-100 transition-opacity">
-<img class="w-full h-full object-cover" data-alt="Artisanal glass dropper bottle packaged in a minimalist embossed paper carton with botanical foil imprint and calligraphy seal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYeDN04IDkxLFPbIbDDshAR17uvlVPqrRvQRt1jg1C-6c3gWtzRyT0SXo7v_8Io7EG5T2tJLAvfpZvAB-wcD9_mSB-_6Jx0UI7LIL18Atfm9AGXLlgbXFIqYKiAbzvbXdu4E86-BEsouvnpAb_hnQJmKSn-U9ZKftcaELufH1WDJkeInLQcOL0sv2oB6eXUi1Ltgec_XOoM_nX_liIhUGZGrsYb7AtuWisC2ZTzghrguh9TPOrc1PO"/>
-</button>
-<button class="rounded-lg overflow-hidden aspect-square bg-surface-container-low flex flex-col items-center justify-center text-secondary gap-1 p-1">
-<span class="material-symbols-outlined text-[18px]">science</span>
-<span class="font-label-caps text-[9px] uppercase tracking-wider text-center leading-none">Lab Assay</span>
-</button>
 </div>
-</section>
-<!-- Title, Provenance & Pricing Overview -->
-<section class="px-6 py-2 flex flex-col gap-2">
+<!-- Right: Purchasing Architecture & Formulation Blueprint -->
+<div class="lg:col-span-6 xl:col-span-5 flex flex-col gap-6">
+<!-- Heading Group -->
+<div class="flex flex-col gap-1.5">
 <div class="flex items-center justify-between">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Cellular Terrain Protocol</span>
-<div class="flex items-center gap-1">
-<span class="material-symbols-outlined text-[14px] text-tertiary" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-label-numeric text-body-sm font-semibold text-forest-ink">4.9</span>
-<a class="font-body-sm text-[12px] text-on-surface-variant underline decoration-secondary/40 underline-offset-2 ml-0.5" href="#terrain-notes">(128 Terrain Notes)</a>
+<span class="font-label-caps text-label-caps tracking-[0.2em] text-tertiary uppercase font-semibold">
+                Cellular Terrain Protocol No. 01
+              </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded-full font-label-caps text-[10px] uppercase font-bold">
+                Clinical Masterbatch
+              </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-display-hero text-forest-ink tracking-tight">
+              Rise Elixir
+            </h1>
+<p class="font-subheading-editorial text-subheading-editorial text-secondary leading-relaxed">
+              Daily Adrenal Harmony &amp; Sustained Cellular Vitality
+            </p>
+<!-- Star Rating & Notes -->
+<div class="flex items-center gap-3 pt-1">
+<div class="flex items-center text-chartreuse-vitality">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-numeric text-label-numeric font-semibold text-forest-ink">4.9</span>
+<span class="text-outline-variant">•</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-forest-ink underline underline-offset-4 decoration-herbaceous-mint" href="#terrain-notes">
+                128 Verified Terrain Notes
+              </a>
 </div>
 </div>
-<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-forest-ink leading-tight tracking-tight">Rise Elixir</h1>
-<p class="font-subheading-editorial text-subheading-editorial italic text-on-surface-variant leading-snug">
-      Daily Adrenal Harmony &amp; Sustained Cellular Vitality
-    </p>
-<div class="flex items-baseline gap-3 pt-1">
-<span class="font-headline-md-mobile text-headline-md-mobile text-forest-ink font-normal" id="displayed-price">$48.00</span>
-<span class="font-body-sm text-body-sm text-secondary line-through hidden" id="strikethrough-price">$48.00</span>
-<span class="bg-secondary-container text-on-secondary-container font-label-caps text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider hidden" id="savings-tag">Save 15%</span>
-</div>
-</section>
-<!-- Purchase Structure / Artisanal Selector -->
-<section class="px-6 py-4 flex flex-col gap-3">
-<!-- Subscription Card (Cyclical Dispatch) -->
-<label class="relative flex flex-col p-4 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all shadow-sm group">
-<div class="flex items-start justify-between gap-3">
-<div class="flex items-center gap-3">
-<input class="mt-0.5 w-4 h-4 text-primary focus:ring-primary accent-primary" id="plan-cyclical" name="purchase_tier" onchange="updatePurchaseState('cyclical')" type="radio" value="cyclical"/>
-<div class="flex flex-col">
-<span class="font-headline-sm text-[17px] font-semibold text-forest-ink">Cyclical Dispensary Dispatch</span>
-<span class="font-body-sm text-[12px] text-secondary">Seasonal apothecary replenishment with priority batch allocation</span>
-</div>
-</div>
-<div class="text-right flex flex-col items-end shrink-0">
-<span class="font-label-numeric font-semibold text-primary text-[15px]">$40.80</span>
-<span class="font-label-caps text-[10px] text-tertiary tracking-wider uppercase font-semibold">Save 15%</span>
-</div>
-</div>
-<!-- Nested Cadence Dropdown (shown when active) -->
-<div class="mt-3 pt-3 flex items-center justify-between gap-2 border-t-0 bg-surface-bright/70 rounded-lg p-2.5" id="frequency-selector">
-<div class="flex items-center gap-1.5 text-on-surface-variant">
-<span class="material-symbols-outlined text-[16px] text-primary">autorenew</span>
-<span class="font-body-sm text-[12px]">Dispatch Cadence:</span>
-</div>
-<select class="bg-transparent font-label-button text-[12px] text-forest-ink font-semibold focus:outline-none cursor-pointer text-right pr-1">
-<option value="30">Every 30 Days (Recommended)</option>
-<option value="45">Every 45 Days</option>
-<option value="60">Every 60 Days</option>
-</select>
-</div>
-</label>
-<!-- One-Time Card -->
-<label class="relative flex items-center justify-between p-4 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low cursor-pointer transition-all shadow-sm">
-<div class="flex items-center gap-3">
-<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" id="plan-single" name="purchase_tier" onchange="updatePurchaseState('single')" type="radio" value="single"/>
-<div class="flex flex-col">
-<span class="font-headline-sm text-[16px] font-semibold text-forest-ink">Single Bottle Purchase</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Standard 50ml dispensary bottling</span>
-</div>
-</div>
-<span class="font-label-numeric font-semibold text-forest-ink text-[15px]">$48.00</span>
-</label>
-<!-- Quantity Selector & Primary CTA Block -->
-<div class="flex items-center gap-3 pt-2">
-<!-- Tactile Quantity Control -->
-<div class="flex items-center justify-between bg-surface-container rounded-xl h-12 px-3 w-28 shrink-0 shadow-sm">
-<button aria-label="Decrease quantity" class="text-forest-ink hover:text-primary active:scale-90 transition-transform flex items-center justify-center p-1" onclick="adjustQuantity(-1)" type="button">
-<span class="material-symbols-outlined text-[18px]">remove</span>
-</button>
-<span class="font-label-numeric text-[15px] font-semibold text-forest-ink" id="quantity-display">1</span>
-<button aria-label="Increase quantity" class="text-forest-ink hover:text-primary active:scale-90 transition-transform flex items-center justify-center p-1" onclick="adjustQuantity(1)" type="button">
-<span class="material-symbols-outlined text-[18px]">add</span>
-</button>
-</div>
-<!-- Add to Bag Button -->
-<button class="flex-1 h-12 bg-primary hover:bg-primary-container text-on-primary font-label-button text-label-button rounded-xl shadow-md active:scale-[0.99] transition-all flex items-center justify-center gap-2 px-4" id="add-to-bag-button" onclick="triggerAddedEffect()">
-<span class="material-symbols-outlined text-[18px]">local_pharmacy</span>
-<span id="cta-button-text">Add to Botanical Bag — $48.00</span>
-</button>
-</div>
-<!-- Artisan Provenance Guarantee Callout -->
-<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3 mt-1 shadow-sm">
-<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">location_on</span>
-<div class="flex flex-col gap-0.5">
-<span class="font-label-caps text-[10px] text-secondary uppercase tracking-widest font-semibold">Origin &amp; Sustainable Logistics</span>
-<p class="font-body-sm text-[12px] leading-relaxed text-on-surface-variant">
-          Handcrafted in small batches in Todos Santos, BCS. Complimentary carbon-neutral courier dispatch on orders exceeding $75.
-        </p>
-</div>
-</div>
-</section>
-<!-- Section Divider with Subtle Alchemical Motifs -->
-<div class="px-6 py-3 flex items-center justify-center gap-3">
-<div class="flex-1 h-[1px] bg-muted-border/60"></div>
-<span class="font-subheading-editorial text-secondary text-sm italic">sol &amp; terra</span>
-<div class="flex-1 h-[1px] bg-muted-border/60"></div>
-</div>
-<!-- Editorial Narrative: The Terrain Purpose -->
-<section class="px-6 py-4 flex flex-col gap-3">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Philosophical Formulation</span>
-<h2 class="font-headline-md-mobile text-headline-md-mobile text-forest-ink leading-snug">The Terrain Purpose</h2>
+<!-- Micro Descriptor -->
 <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-      In functional terrain medicine, chronic fatigue is rarely a deficiency of stimulation; it is a communication breakdown within the hypothalamic-pituitary-adrenal (HPA) axis. Rise Elixir does not borrow tomorrow’s energy to burn today. 
-    </p>
-<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col gap-2 my-1">
+            Formulated to recalibrate depleted sympathetic tone and nourish mitochondrial respiration without adrenal exhaustion. An organic dual-extract marrying wild mountain cordyceps with Baja ocean-desert botanicals.
+          </p>
+<!-- Purchasing Options Toggle Cards -->
+<div class="flex flex-col gap-3 pt-2">
+<!-- Option 1: Subscription (Selected Default) -->
+<div class="relative p-4 rounded-xl cursor-pointer transition-all bg-surface-container-low shadow-md ring-2 ring-primary" id="plan-subscription" onclick="selectPlan('subscription')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary" id="radio-sub">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div>
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-tertiary text-[20px]">filter_vintage</span>
-<span class="font-headline-sm text-[16px] text-forest-ink font-semibold">Cellular Energy Without Exhaustion</span>
+<span class="font-label-button text-forest-ink font-semibold">Cyclical Dispensary Dispatch</span>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 rounded font-label-caps text-[10px] uppercase font-bold">Save 15%</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-        By re-sensitizing cortisol receptors and nourishing depleted mitochondrial membranes with organic adaptogens, this tincture promotes grounded wakefulness, steady mental endurance, and deep physiological resilience.
-      </p>
+<span class="font-body-sm text-body-sm text-secondary block mt-0.5">Automated seasonal reserve • Cancel or modify anytime</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-display-hero text-forest-ink">$40.80</div>
+<span class="font-body-sm text-xs line-through text-outline">$48.00</span>
+</div>
+</div>
+<!-- Frequency Dropdown / Selectors -->
+<div class="mt-4 pt-3 flex flex-col gap-2 bg-surface-container-lowest/80 p-3 rounded-lg" id="cadence-container">
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Dispatch Cadence Schedule:</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="cadence-btn py-1.5 rounded text-xs font-label-numeric font-medium bg-primary text-on-primary" onclick="setCadence(30, this)" type="button">
+                    Every 30 Days
+                  </button>
+<button class="cadence-btn py-1.5 rounded text-xs font-label-numeric font-medium bg-surface-container hover:bg-surface-container-high text-forest-ink" onclick="setCadence(60, this)" type="button">
+                    Every 60 Days
+                  </button>
+<button class="cadence-btn py-1.5 rounded text-xs font-label-numeric font-medium bg-surface-container hover:bg-surface-container-high text-forest-ink" onclick="setCadence(90, this)" type="button">
+                    Every 90 Days
+                  </button>
+</div>
+</div>
+</div>
+<!-- Option 2: One-time Bottle -->
+<div class="relative p-4 rounded-xl cursor-pointer transition-all bg-surface-container-lowest shadow-sm hover:shadow-md" id="plan-onetime" onclick="selectPlan('onetime')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-5 h-5 rounded-full bg-surface-container flex items-center justify-center text-transparent" id="radio-onetime">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+<div>
+<span class="font-label-button text-forest-ink font-semibold">Single Bottle Dispensary Order</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">One-time 50ml violet apothecary bottling</span>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-display-hero text-forest-ink">$48.00</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quantity & Add to Cart -->
+<div class="flex items-center gap-3 pt-2">
+<!-- Quantity Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-lg p-1 shadow-inner">
+<button aria-label="Decrease Quantity" class="w-10 h-10 flex items-center justify-center text-forest-ink hover:text-primary hover:bg-surface rounded transition-colors" onclick="updateQuantity(-1)" type="button">
+<span class="material-symbols-outlined text-base">remove</span>
+</button>
+<span class="w-8 text-center font-label-numeric text-sm font-semibold text-forest-ink" id="qty-val">1</span>
+<button aria-label="Increase Quantity" class="w-10 h-10 flex items-center justify-center text-forest-ink hover:text-primary hover:bg-surface rounded transition-colors" onclick="updateQuantity(1)" type="button">
+<span class="material-symbols-outlined text-base">add</span>
+</button>
+</div>
+<!-- Primary Add Button -->
+<button class="flex-1 bg-deep-spruce hover:bg-forest-ink text-surface-bright py-3.5 px-6 rounded-lg font-label-button text-label-button tracking-wider uppercase transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-3" id="add-to-cart-btn" onclick="handleAddToCart()" type="button">
+<span class="material-symbols-outlined text-lg">local_mall</span>
+<span id="cart-btn-label">Add to Botanical Bag • $40.80</span>
+</button>
+</div>
+<!-- Dispatch & Origin Guarantees -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center gap-2.5 text-forest-ink font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-lg">local_shipping</span>
+<span>Complimentary temperature-stabilized courier dispatch over $75 USD.</span>
+</div>
+<div class="flex items-center gap-2.5 text-forest-ink font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-lg">nature</span>
+<span>Handcrafted in Todos Santos, Baja California Sur • Micro-batch #08.</span>
+</div>
+<div class="flex items-center gap-2.5 text-forest-ink font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-lg">verified_user</span>
+<span>100% Recyclable Miron glass and bio-compostable stone paper labeling.</span>
+</div>
+</div>
+<!-- Quick Accordions for Ritual & Ingestion -->
+<div class="flex flex-col gap-2 pt-2">
+<!-- Accordion 1 -->
+<details class="group bg-surface-container-low rounded-xl p-4 transition-all">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-sm text-base font-display-hero text-forest-ink">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">schedule</span>
+                  The Daily Morning Ritual
+                </span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary text-sm">expand_more</span>
+</summary>
+<div class="pt-3 font-body-md text-sm text-on-surface-variant leading-relaxed">
+                Dispense 1 to 2 full pipettes (approx. 1-2 ml) sublingually each morning upon rising. Hold beneath the tongue for 45 seconds to encourage direct mucosal capillary absorption, then swallow. Alternatively, blend into warm (not boiling) spring water, bone broth, or matcha tea.
+              </div>
+</details>
+<!-- Accordion 2 -->
+<details class="group bg-surface-container-low rounded-xl p-4 transition-all">
+<summary class="flex items-center justify-between cursor-pointer list-none font-headline-sm text-base font-display-hero text-forest-ink">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">biotech</span>
+                  Ultrasonic Dual-Stage Extraction
+                </span>
+<span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-secondary text-sm">expand_more</span>
+</summary>
+<div class="pt-3 font-body-md text-sm text-on-surface-variant leading-relaxed">
+                We combine low-temperature acoustic cavitation (breaking tough chitin cellular walls) with artisanal Mexican cane alcohol fermentation. This isolates both water-soluble beta-glucans and lipophilic triterpenoids, yielding an extraordinary 8:1 potency ratio without heat degradation.
+              </div>
+</details>
+</div>
+</div>
+</div>
 </div>
 </section>
-<!-- Editorial Accordions: Actives, Ritual, Method -->
-<section class="px-6 py-2 flex flex-col gap-2">
-<!-- Accordion 1: Botanical Actives -->
-<details class="group bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden" open="">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
-<div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-primary text-[20px]">psychiatry</span>
-<span class="font-headline-sm text-[17px] text-forest-ink font-medium">Botanical Actives &amp; Provenance</span>
+<!-- Deep Clinical Narrative: The Terrain Purpose -->
+<section class="w-full bg-forest-ink text-surface-container-low py-16 lg:py-24 my-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-chartreuse-vitality"></span>
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-chartreuse-vitality uppercase">The Terrain Mechanism</span>
 </div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-4 pb-4 pt-1 flex flex-col gap-3">
-<!-- Ingredient 1 -->
-<div class="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-low">
-<div class="flex items-baseline justify-between">
-<span class="font-subheading-editorial text-[17px] font-semibold text-forest-ink">Cordyceps militaris</span>
-<span class="font-label-caps text-[10px] text-secondary uppercase">Wild Harvested • 8:1 Extract</span>
-</div>
-<p class="font-body-sm text-[12px] text-on-surface-variant">
-            Encourages ATP cellular synthesis and improves maximal oxygen intake without stressing sympathetic tone.
+<h2 class="font-headline-lg text-headline-lg font-display-hero text-surface-bright leading-tight">
+            Burnout is not a lack of caffeine. It is an HPA-axis signaling collapse.
+          </h2>
+<p class="font-body-lg text-body-lg text-surface-container-high leading-relaxed">
+            When modern stress continuously stimulates the sympathetic nervous system, the adrenal glands lose circadian rhythmicity. Cortisol spikes when it should rest, and crashes when cellular energy is needed most.
           </p>
-</div>
-<!-- Ingredient 2 -->
-<div class="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-low">
-<div class="flex items-baseline justify-between">
-<span class="font-subheading-editorial text-[17px] font-semibold text-forest-ink">KSM-66® Ashwagandha</span>
-<span class="font-label-caps text-[10px] text-secondary uppercase">Organic Root • Full Spectrum</span>
-</div>
-<p class="font-body-sm text-[12px] text-on-surface-variant">
-            Clinically documented to modulate excessive serum cortisol, stabilizing morning focus and adrenal equilibrium.
+<p class="font-body-md text-body-md text-surface-container-highest leading-relaxed">
+            Rise Elixir works upstream at the hypothalamic receptor site. Rather than whipping an exhausted horse with synthetic stimulants, its dual-extracted adaptogens donate mitochondrial electrons, preserve mucosal reserves, and restore homeostatic baseline.
           </p>
+<div class="pt-2 flex items-center gap-6">
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-display-hero text-chartreuse-vitality">0%</span>
+<span class="font-label-caps text-xs text-surface-container-high uppercase tracking-wider">Caffeine Spike</span>
 </div>
-<!-- Ingredient 3 -->
-<div class="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-low">
-<div class="flex items-baseline justify-between">
-<span class="font-subheading-editorial text-[17px] font-semibold text-forest-ink">Solar Tulsi (Holy Basil)</span>
-<span class="font-label-caps text-[10px] text-secondary uppercase">Baja Organic Cultivar</span>
+<div class="w-px h-10 bg-surface-container-highest/20"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-display-hero text-chartreuse-vitality">+31%</span>
+<span class="font-label-caps text-xs text-surface-container-high uppercase tracking-wider">Cellular ATP Synthesis</span>
 </div>
-<p class="font-body-sm text-[12px] text-on-surface-variant">
-            Uplifting adaptogen celebrated for clearing cerebral fog and protecting tissues from metabolic stress.
-          </p>
-</div>
-</div>
-</details>
-<!-- Accordion 2: The Daily Ritual -->
-<details class="group bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
-<div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-primary text-[20px]">wb_twilight</span>
-<span class="font-headline-sm text-[17px] text-forest-ink font-medium">The Daily Ritual &amp; Application</span>
-</div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-4 pb-4 pt-1 flex flex-col gap-3 font-body-sm text-body-sm text-on-surface-variant">
-<div class="flex gap-3 items-start">
-<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-numeric text-[12px] flex items-center justify-center shrink-0 mt-0.5 font-bold">1</span>
-<div>
-<strong class="text-forest-ink block">Sublingual Awakening</strong>
-            Dispense two full droppers (approximately 2ml) directly under the tongue 15 minutes prior to morning nourishment. Hold for 30 seconds to facilitate direct capillary absorption.
-          </div>
-</div>
-<div class="flex gap-3 items-start">
-<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container font-label-numeric text-[12px] flex items-center justify-center shrink-0 mt-0.5 font-bold">2</span>
-<div>
-<strong class="text-forest-ink block">Spring Water Alchemy</strong>
-            Alternatively, blend into 4oz of room-temperature artisanal spring water infused with a squeeze of fresh lime and a pinch of unrefined grey sea salt.
-          </div>
+<div class="w-px h-10 bg-surface-container-highest/20"></div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-display-hero text-chartreuse-vitality">−24%</span>
+<span class="font-label-caps text-xs text-surface-container-high uppercase tracking-wider">Salivary Cortisol Surge</span>
 </div>
 </div>
-</details>
-<!-- Accordion 3: Extraction Methodology -->
-<details class="group bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
-<summary class="flex items-center justify-between p-4 cursor-pointer list-none select-none">
-<div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-primary text-[20px]">hourglass_empty</span>
-<span class="font-headline-sm text-[17px] text-forest-ink font-medium">Extraction Methodology</span>
 </div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-200 group-open:rotate-180">expand_more</span>
-</summary>
-<div class="px-4 pb-4 pt-1 flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-<p>
-          We employ a proprietary triple-phase extraction: 14-day cold maceration in organic cane spirit, followed by sub-critical ultrasonic cell disruption and concentrated decoction of tough roots. This captures water-soluble polysaccharides alongside delicate lipophilic terpenes.
+<div class="lg:col-span-7">
+<!-- Rich SVG Data Visualization: Cortisol Curve Modulation -->
+<div class="p-6 lg:p-8 rounded-2xl bg-deep-spruce shadow-xl flex flex-col gap-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<span class="font-headline-sm text-headline-sm font-display-hero text-surface-bright">Circadian Adrenal Modulation Profile</span>
+<div class="flex items-center gap-4 text-xs font-label-caps uppercase">
+<div class="flex items-center gap-1.5 text-error">
+<span class="w-3 h-0.5 bg-error inline-block"></span>
+<span>Dysregulated</span>
+</div>
+<div class="flex items-center gap-1.5 text-chartreuse-vitality">
+<span class="w-3 h-0.5 bg-chartreuse-vitality inline-block"></span>
+<span>Rise Elixir Protocol</span>
+</div>
+</div>
+</div>
+<!-- Cortisol Chart SVG -->
+<div class="w-full h-56 relative flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 600 200">
+<defs>
+<lineargradient id="riseGlow" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ADC743" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#ADC743" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#424842" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="600" y1="40" y2="40"></line>
+<line stroke="#424842" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="600" y1="100" y2="100"></line>
+<line stroke="#424842" stroke-dasharray="4 4" stroke-opacity="0.3" x1="0" x2="600" y1="160" y2="160"></line>
+<!-- Dysregulated Curve (Red dashed spike & late crash) -->
+<path d="M 0 170 Q 120 20 200 40 T 350 160 T 500 110 T 600 80" fill="none" stroke="#ba1a1a" stroke-dasharray="6 4" stroke-width="2.5"></path>
+<!-- Healthy Regulated Rise Curve (Smooth natural CAR slope) -->
+<path d="M 0 180 Q 100 50 160 55 T 320 120 T 450 165 T 600 185 L 600 200 L 0 200 Z" fill="url(#riseGlow)"></path>
+<path d="M 0 180 Q 100 50 160 55 T 320 120 T 450 165 T 600 185" fill="none" stroke="#ADC743" stroke-width="3"></path>
+<!-- Circadian Awakening Marker -->
+<circle class="animate-pulse" cx="160" cy="55" fill="#ADC743" r="5"></circle>
+</svg>
+</div>
+<!-- X Axis Labels -->
+<div class="grid grid-cols-4 font-label-numeric text-[11px] text-surface-container-high pt-2 border-none">
+<span>06:00 (Wake)</span>
+<span>12:00 (Midday)</span>
+<span>18:00 (Dusk)</span>
+<span class="text-right">22:00 (Soporific)</span>
+</div>
+<div class="p-3 bg-surface-container-low/10 rounded-lg text-surface-container-high font-body-sm text-xs leading-relaxed">
+              *Metagenomic and endocrine assay data sourced from 45 clinical subjects monitored over 6 weeks across Baja California functional wellness cohort.
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Botanical Monograph / Provenance Grid -->
+<section class="w-full py-16 lg:py-20 bg-surface">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl flex flex-col gap-2 mb-12">
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary uppercase font-semibold">
+          Active Flora &amp; Mycological Provenance
+        </span>
+<h2 class="font-headline-lg text-headline-lg font-display-hero text-forest-ink">
+          Four Terrestrial Alchemies. One Harmonized Tincture.
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Each botanical is hand-inspected for terpene density, heavy metal absence, and bio-affinity before undergoing our phased ultrasonic extraction in Todos Santos.
         </p>
-<div class="flex items-center gap-2 pt-1 text-primary">
-<span class="material-symbols-outlined text-[16px]">verified</span>
-<span class="font-label-caps text-[10px] tracking-wider uppercase font-semibold">Zero Synthetic Solvents • Pure Plant Matrix</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Herb 1: Cordyceps -->
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">psychology</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Mycological Dual Extract (8:1)</span>
+<h3 class="font-headline-sm text-headline-sm font-display-hero text-forest-ink italic mt-0.5">
+                Cordyceps militaris
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              High-altitude fruiting bodies cultivated under bio-identical mountain conditions. Directly potentiates mitochondrial ATP synthesis and VO2 max uptake without triggering sympathetic adrenaline drain.
+            </p>
+</div>
+<div class="pt-4 flex flex-col gap-1 bg-surface-container-lowest/60 p-3 rounded-lg">
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-secondary">Terrain Target</span>
+<span class="font-body-sm text-xs font-semibold text-forest-ink">Cellular ATP &amp; Aerobic Endurance</span>
 </div>
 </div>
-</details>
+<!-- Herb 2: Ashwagandha -->
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">balance</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Full-Spectrum Organic Root</span>
+<h3 class="font-headline-sm text-headline-sm font-display-hero text-forest-ink italic mt-0.5">
+                KSM-66® Ashwagandha
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              The gold-standard root extraction preserving the natural balance of withanolides. Clinically shown to modulate HPA-axis sensitivity, preventing cortisol-induced gut permeability.
+            </p>
+</div>
+<div class="pt-4 flex flex-col gap-1 bg-surface-container-lowest/60 p-3 rounded-lg">
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-secondary">Terrain Target</span>
+<span class="font-body-sm text-xs font-semibold text-forest-ink">Adrenocortical Homeostasis</span>
+</div>
+</div>
+<!-- Herb 3: Tulsi -->
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Baja Ocean Terrace Cultivar</span>
+<h3 class="font-headline-sm text-headline-sm font-display-hero text-forest-ink italic mt-0.5">
+                Solar Tulsi (Holy Basil)
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Harvested at solar noon on our Todos Santos coastal beds. Packed with eugenol and rosmarinic acid to dissipate cognitive clouding and safeguard neuro-enteric nerve endings.
+            </p>
+</div>
+<div class="pt-4 flex flex-col gap-1 bg-surface-container-lowest/60 p-3 rounded-lg">
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-secondary">Terrain Target</span>
+<span class="font-body-sm text-xs font-semibold text-forest-ink">Cerebral Clarity &amp; Vagus Nerve</span>
+</div>
+</div>
+<!-- Herb 4: Baja Cardon -->
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between gap-6 group">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">shield_moon</span>
+</div>
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-secondary">Endemic Desert Wildharvest</span>
+<h3 class="font-headline-sm text-headline-sm font-display-hero text-forest-ink italic mt-0.5">
+                Baja Desert Cardon
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Sustainably gathered fallen giant cactus tissue containing rare protective osmolytes that shield cellular walls from oxidative dehydration and digestive stress.
+            </p>
+</div>
+<div class="pt-4 flex flex-col gap-1 bg-surface-container-lowest/60 p-3 rounded-lg">
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-secondary">Terrain Target</span>
+<span class="font-body-sm text-xs font-semibold text-forest-ink">Osmotic Mucosal Hydration</span>
+</div>
+</div>
+</div>
+</div>
 </section>
-<!-- Clinical Pairings: "Pairs in Clinical Practice" -->
-<section class="px-6 pt-6 pb-4 flex flex-col gap-3">
-<div class="flex flex-col">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Holistic Synergies</span>
-<h2 class="font-headline-md-mobile text-headline-md-mobile text-forest-ink">Pairs in Clinical Practice</h2>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Formulations crafted to amplify bioavailability and digestive receptivity.</p>
+<!-- Clinical Pairings: 'Pairs in Clinical Practice' -->
+<section class="w-full py-16 bg-surface-container-low/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary uppercase font-semibold">
+            Synergistic Formulations
+          </span>
+<h2 class="font-headline-md text-headline-md font-display-hero text-forest-ink">
+            Pairs in Clinical Practice
+          </h2>
 </div>
-<div class="grid grid-cols-2 gap-3 pt-1">
-<!-- Product Card 1 -->
-<div class="flex flex-col bg-surface-container-lowest rounded-xl p-3 shadow-sm justify-between">
-<div class="flex flex-col gap-2">
-<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
-<img class="w-full h-full object-cover" data-alt="Artisanal glass dropper bottle of Digestive Bitters on textured handmade paper background with dried gentian root and wild orange peel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7HF_t5g8moaGs1m8hLPxynu9JeE5Yf0htpPTQ-wKlwuFCIgqsLmWyRPgTos4gXf_6GOUWxlADs98_eUeAHYL-ZezU6aptG73VjENRPZr6YNepCVxhFZTORvr4tv-WPiB0LTn1libRQnkEh-UaiBSbu59u_zAShuC0NMG1aTrVqV6OlTzVBTuY0uaT_8EFGvz7C9qc-LJv7bL65Bm5Usin9z90HXQaNIKlq_SrkdHtuyLh9SbUza2H"/>
-<span class="absolute top-2 left-2 bg-surface-bright/90 px-1.5 py-0.5 rounded text-[9px] font-label-caps text-secondary uppercase">Gut Motility</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Adaptogens compound exponentially when combined with digestive stimulation and cellular hydration protocols.
+        </p>
 </div>
-<div class="flex flex-col">
-<span class="font-subheading-editorial text-[15px] font-semibold text-forest-ink leading-tight">Digestive Bitters</span>
-<span class="font-body-sm text-[11px] text-on-surface-variant">Wild Gentian &amp; Peel</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Pairing 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center gap-5 group">
+<div class="w-full sm:w-32 h-32 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Square bottle of Botanical Artisanal Digestive Bitters with organic citrus peel and gentian root accents, soft natural morning shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzasKfx9Zn6tq-JWGE_VRDJ0je40bMWGpiO14v_f_UoSvdkgArXSUebMfgauwgNkW4wjSRIX94KMXCdaOvyOzw_jl-avme7tKqsAT5HahRVz3iOq7o7ph2NwqhPKmfEV8-TqGLT5Yu2CR4gM23zLaO3zdmdFwbPD_YCE52-uWVDWtlsu9hBZav13p5TaBwONotoQO-fnzpre3g3vW28BFCP4pNQEogwb_oVCOVfjhxTD5DBxkmiW6Q"/>
 </div>
+<div class="flex-1 flex flex-col justify-between w-full">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] uppercase text-secondary font-semibold">Enteric Acid Pre-Wash</span>
+<span class="font-headline-sm text-sm font-display-hero text-forest-ink font-bold">$34.00</span>
 </div>
-<div class="flex items-center justify-between pt-3 mt-2 border-t-0">
-<span class="font-label-numeric text-[13px] font-semibold text-forest-ink">$34.00</span>
-<button aria-label="Add Digestive Bitters to bag" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-forest-ink flex items-center justify-center transition-colors" onclick="quickAddPairing('Digestive Bitters', 34)" type="button">
-<span class="material-symbols-outlined text-[16px]">add</span>
+<h3 class="font-headline-sm text-base font-display-hero text-forest-ink mt-0.5">
+                Baja Botanical Digestive Bitters
+              </h3>
+<p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">
+                Stimulates vagal gastrin flow 10 minutes prior to Rise Elixir for optimized alkaloid bioavailability.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-herbaceous-mint uppercase">100ml Dropper</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-forest-ink px-3 py-1.5 rounded font-label-button text-xs transition-colors flex items-center gap-1.5" onclick="addPairing(this, 'Digestive Bitters', 34.00)" type="button">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add to Protocol</span>
 </button>
 </div>
 </div>
-<!-- Product Card 2 -->
-<div class="flex flex-col bg-surface-container-lowest rounded-xl p-3 shadow-sm justify-between">
-<div class="flex flex-col gap-2">
-<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
-<img class="w-full h-full object-cover" data-alt="Delicate frosted glass dropper bottle of Cardon Desert Flower Essence sitting amidst Baja desert sands and flowering succulent petals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-_LNmxBFhmUAU7M-NC3TVstx56T-gQ_e1xJWTk65X9ZT9YPQQYRKD5r2m9ITYL8vsepg6JRfahI4Dn3s16sXCiTl-gz08eTGfYAYUqA7_MdN9ZYNLwRXY51HUEc_hQTBp5rfTzsiNpsrP7oLZTtu1tZ_B2aMFrF5wg7YyqIot1qoA8jMmgYUWynTifcMwCHF3jfldAAezIj0CagRBlmKSa6iyR1A0ESP91Tlj6KY-NP_LPjfVc6o9"/>
-<span class="absolute top-2 left-2 bg-surface-bright/90 px-1.5 py-0.5 rounded text-[9px] font-label-caps text-secondary uppercase">Nerve Calm</span>
 </div>
-<div class="flex flex-col">
-<span class="font-subheading-editorial text-[15px] font-semibold text-forest-ink leading-tight">Cardon Essence</span>
-<span class="font-body-sm text-[11px] text-on-surface-variant">Baja Botanical Infusion</span>
+<!-- Pairing 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center gap-5 group">
+<div class="w-full sm:w-32 h-32 rounded-lg bg-surface-container overflow-hidden shrink-0">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Miron violet glass bottle with silver pipette resting against desert sand and cactus flower, displaying Cardon Cellular Essence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqlGxXNBVKpfcw0tsOww9ODzyTR8pBME9Hu-8q-wDVj0fcAfEkgv1Eattf3_oq81d2Gc9VrLsLvFewm6rXYFVW6ceUtznsnJ0moF38LLud0kh_iiTIFFUGHlbtk8oVs6EmpW2X6o3cIX7svLfloH7gMgSKrKwywc6TvfxCD-QJiKl1hj2Z-58tkZEcawVfEfvvrVsCiteE6AdC1YaRGf4GEHY_o-Lv-kLsME3bEsPxUEuJ6iwbNsEg"/>
 </div>
+<div class="flex-1 flex flex-col justify-between w-full">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-[10px] uppercase text-secondary font-semibold">Osmolytic Hydration</span>
+<span class="font-headline-sm text-sm font-display-hero text-forest-ink font-bold">$28.00</span>
 </div>
-<div class="flex items-center justify-between pt-3 mt-2 border-t-0">
-<span class="font-label-numeric text-[13px] font-semibold text-forest-ink">$28.00</span>
-<button aria-label="Add Cardon Essence to bag" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container text-forest-ink flex items-center justify-center transition-colors" onclick="quickAddPairing('Cardon Essence', 28)" type="button">
-<span class="material-symbols-outlined text-[16px]">add</span>
+<h3 class="font-headline-sm text-base font-display-hero text-forest-ink mt-0.5">
+                Cardon Desert Flower Hydrosol
+              </h3>
+<p class="font-body-sm text-xs text-on-surface-variant mt-1 leading-relaxed">
+                Rehydrates mucosal gut barrier lining to prime enterocyte receptor docking for adaptogenic fractions.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-caps text-[10px] text-herbaceous-mint uppercase">50ml Fine Mist</span>
+<button class="bg-surface-container hover:bg-primary hover:text-on-primary text-forest-ink px-3 py-1.5 rounded font-label-button text-xs transition-colors flex items-center gap-1.5" onclick="addPairing(this, 'Cardon Hydrosol', 28.00)" type="button">
+<span class="material-symbols-outlined text-sm">add</span>
+<span>Add to Protocol</span>
 </button>
 </div>
 </div>
 </div>
+</div>
+</div>
 </section>
-<!-- Verified Terrain Notes (Testimonials / Customer Reviews) -->
-<section class="px-6 py-5 flex flex-col gap-3" id="terrain-notes">
+<!-- Verified Terrain Notes & Clinical Case Studies -->
+<section class="w-full py-16 lg:py-24 bg-surface" id="terrain-notes">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-secondary uppercase font-semibold">
+            Empirical Results
+          </span>
+<h2 class="font-headline-lg text-headline-lg font-display-hero text-forest-ink">
+            Verified Terrain Notes
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Quantitative bio-markers and experiential observations from practitioners and patrons.
+          </p>
+</div>
+<div class="flex items-center gap-4 bg-surface-container-low p-3 rounded-xl">
+<div class="text-center px-2">
+<span class="font-headline-sm text-xl font-display-hero text-forest-ink block font-bold">4.9 / 5</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Average Efficacy</span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div class="text-center px-2">
+<span class="font-headline-sm text-xl font-display-hero text-forest-ink block font-bold">94%</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Report No Jitters</span>
+</div>
+<div class="w-px h-8 bg-surface-container-high"></div>
+<div class="text-center px-2">
+<span class="font-headline-sm text-xl font-display-hero text-forest-ink block font-bold">88%</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Sustained PM Energy</span>
+</div>
+</div>
+</div>
+<!-- 3-Column Reviews / Case Studies Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Note 1 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-3">
 <div class="flex items-center justify-between">
+<div class="flex items-center text-chartreuse-vitality">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-label-numeric text-[10px]">
+                +14% HRV Lift
+              </span>
+</div>
+<p class="font-body-md text-sm text-on-surface italic leading-relaxed">
+              “As an integrative neurologist, I measure heart rate variability and deep sleep architecture religiously. Within 18 days of the Rise protocol, my Oura baseline shifted upward by 14%, and the 3 PM brain fog evaporated completely.”
+            </p>
+</div>
+<div class="pt-4 border-none flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">
+              DM
+            </div>
+<div>
+<span class="font-label-button text-xs text-forest-ink block font-semibold">Dr. Marcus Vance, MD</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Functional Neurologist • Austin, TX</span>
+</div>
+</div>
+</div>
+<!-- Note 2 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center text-chartreuse-vitality">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-label-numeric text-[10px]">
+                Normalized DUTCH Test
+              </span>
+</div>
+<p class="font-body-md text-sm text-on-surface italic leading-relaxed">
+              “I spent 4 years recovering from severe adrenal burn after launching my design studio. Rise Elixir gave me calm, grounded baseline alertness without the tremulous anxiety coffee always gave me. It tastes like wild earth.”
+            </p>
+</div>
+<div class="pt-4 border-none flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">
+              SL
+            </div>
+<div>
+<span class="font-label-button text-xs text-forest-ink block font-semibold">Seraphina Laurent</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Creative Director • Todos Santos, BCS</span>
+</div>
+</div>
+</div>
+<!-- Note 3 -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-6">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center text-chartreuse-vitality">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded font-label-numeric text-[10px]">
+                Endurance Verified
+              </span>
+</div>
+<p class="font-body-md text-sm text-on-surface italic leading-relaxed">
+              “We incorporate Rise in our pre-expedition protocols for desert ultramarathoners. The cardon osmolyte component protects gut mucosa while Cordyceps sustains glycogen preservation in extreme temperatures.”
+            </p>
+</div>
+<div class="pt-4 border-none flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">
+              EH
+            </div>
+<div>
+<span class="font-label-button text-xs text-forest-ink block font-semibold">Elena Hendricks, MS</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Performance Physiologist • Boulder, CO</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Clinical Consultation Upsell Banner -->
+<section class="w-full pb-16 lg:pb-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative overflow-hidden rounded-3xl bg-surface-container p-8 lg:p-12 shadow-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-8 flex flex-col gap-4">
+<span class="font-label-caps text-label-caps tracking-[0.25em] text-tertiary uppercase font-semibold">
+              Constitutional Terrain Diagnostic
+            </span>
+<h2 class="font-headline-lg text-headline-lg font-display-hero text-forest-ink">
+              Need personalized guidance for your unique gut-adrenal axis?
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+              Book a 1:1 Clinical Terrain Consultation with Abbie Jean Ciullo. We analyze functional microbiome reports (BiomeFx), comprehensive stool testing, and neuro-endocrine panels to formulate bespoke compounding plans.
+            </p>
+<div class="flex flex-wrap items-center gap-6 pt-2 text-forest-ink font-body-sm text-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>60-Min Deep Genetic &amp; Microbiome Review</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<span>Tailored Botanical Compound Script</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center">
+<button class="bg-primary hover:bg-forest-ink text-on-primary px-8 py-4 rounded-xl font-label-button text-label-button tracking-wider uppercase transition-all shadow-md hover:shadow-xl text-center w-full sm:w-auto" type="button">
+              Book Terrain Consultation
+            </button>
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase mt-3 tracking-wider">
+              Limited to 8 New Clinical Case Reviews Monthly
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mobile Sticky Bottom Purchasing Bar (Visible only on small viewports) -->
+<div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md p-4 shadow-[0_-4px_20px_rgba(27,42,34,0.12)]">
+<div class="flex items-center justify-between gap-4 max-w-lg mx-auto">
 <div class="flex flex-col">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Observed Efficacy</span>
-<h2 class="font-headline-md-mobile text-headline-md-mobile text-forest-ink">Terrain Notes</h2>
+<span class="font-headline-sm text-sm font-display-hero text-forest-ink leading-tight">Rise Elixir (50ml)</span>
+<span class="font-label-numeric text-xs font-semibold text-primary" id="mobile-price-preview">$40.80 • Dispatch</span>
 </div>
-<button class="font-label-button text-[12px] text-primary underline underline-offset-4 hover:text-primary-container">Leave Note</button>
-</div>
-<!-- Review Card 1 -->
-<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2 shadow-sm">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-1 text-tertiary">
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<span class="font-label-caps text-[10px] text-secondary">Verified Seeker • 3 Mo. Ritual</span>
-</div>
-<p class="font-subheading-editorial text-[16px] italic text-forest-ink leading-relaxed">
-        “Replacing my second espresso with Rise Elixir ended the 3pm crash. My wearable tracker recorded a 14% elevation in HRV within 18 days.”
-      </p>
-<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-[12px] pt-1">
-<span>Dr. Elena Vance, Functional Acupuncturist</span>
-<span>Santa Fe, NM</span>
+<button class="bg-deep-spruce hover:bg-forest-ink text-surface-bright px-6 py-3 rounded-lg font-label-button text-xs uppercase tracking-wider shadow-sm flex items-center gap-2" onclick="handleAddToCart()" type="button">
+<span class="material-symbols-outlined text-sm">local_mall</span>
+<span>Add to Bag</span>
+</button>
 </div>
 </div>
-<!-- Review Card 2 -->
-<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2 shadow-sm">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-1 text-tertiary">
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<span class="font-label-caps text-[10px] text-secondary">Verified Seeker • Dispatch Subscriber</span>
-</div>
-<p class="font-subheading-editorial text-[16px] italic text-forest-ink leading-relaxed">
-        “The taste is intensely grounded and earthy, hints of spiced bark and clean sunlight. The nervous system ease is palpable almost immediately.”
-      </p>
-<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-[12px] pt-1">
-<span>Marcus L., Architect</span>
-<span>Austin, TX</span>
-</div>
-</div>
-</section>
-<!-- Notification Toast for Bag Insertion -->
-<div class="fixed top-20 inset-x-6 z-50 bg-deep-spruce text-surface-bright p-3.5 rounded-xl shadow-xl flex items-center justify-between gap-3 transform -translate-y-28 opacity-0 pointer-events-none transition-all duration-300" id="bag-toast">
-<div class="flex items-center gap-2.5">
-<span class="material-symbols-outlined text-chartreuse-vitality text-[20px]">check_circle</span>
-<span class="font-body-sm text-[13px] text-surface-bright" id="toast-message">Rise Elixir carefully added to your apothecary bag.</span>
-</div>
-<span class="font-label-caps text-[10px] uppercase text-herbaceous-mint tracking-wider shrink-0">Dispatched</span>
-</div>
-</div>
+<!-- Interactive Logic Script -->
 <script>
-  let currentQuantity = 1;
-  let currentPlan = 'single';
-  const prices = {
-    single: 48.00,
-    cyclical: 40.80
-  };
+    let currentQuantity = 1;
+    let selectedPlan = 'subscription';
+    let basePrice = 40.80;
+    let subscriptionPrice = 40.80;
+    let onetimePrice = 48.00;
 
-  function updatePurchaseState(plan) {
-    currentPlan = plan;
-    const priceDisplay = document.getElementById('displayed-price');
-    const strikeDisplay = document.getElementById('strikethrough-price');
-    const savingsTag = document.getElementById('savings-tag');
-    const ctaText = document.getElementById('cta-button-text');
-    const freqBox = document.getElementById('frequency-selector');
-
-    const unitPrice = prices[plan];
-    const totalPrice = (unitPrice * currentQuantity).toFixed(2);
-
-    if (plan === 'cyclical') {
-      priceDisplay.textContent = '$' + unitPrice.toFixed(2);
-      strikeDisplay.classList.remove('hidden');
-      savingsTag.classList.remove('hidden');
-      freqBox.classList.remove('hidden');
-      freqBox.classList.add('flex');
-    } else {
-      priceDisplay.textContent = '$' + unitPrice.toFixed(2);
-      strikeDisplay.classList.add('hidden');
-      savingsTag.classList.add('hidden');
-      freqBox.classList.add('hidden');
-      freqBox.classList.remove('flex');
+    function selectThumbnail(index, btnElement) {
+      const parent = btnElement.parentElement;
+      const allButtons = parent.querySelectorAll('button');
+      allButtons.forEach(btn => {
+        btn.classList.remove('ring-2', 'ring-primary', 'opacity-100');
+        btn.classList.add('opacity-70');
+      });
+      btnElement.classList.remove('opacity-70');
+      btnElement.classList.add('ring-2', 'ring-primary', 'opacity-100');
+      
+      const mainImg = document.getElementById('main-product-image');
+      const clickedImg = btnElement.querySelector('img');
+      if (clickedImg && mainImg) {
+        mainImg.setAttribute('data-alt', clickedImg.getAttribute('data-alt'));
+      }
     }
 
-    ctaText.textContent = `Add to Botanical Bag — $${totalPrice}`;
-  }
+    function selectPlan(plan) {
+      selectedPlan = plan;
+      const subCard = document.getElementById('plan-subscription');
+      const onetimeCard = document.getElementById('plan-onetime');
+      const radioSub = document.getElementById('radio-sub');
+      const radioOnetime = document.getElementById('radio-onetime');
+      const cadenceBox = document.getElementById('cadence-container');
 
-  function adjustQuantity(delta) {
-    const newQty = currentQuantity + delta;
-    if (newQty >= 1 && newQty <= 10) {
-      currentQuantity = newQty;
-      document.getElementById('quantity-display').textContent = currentQuantity;
-      const unitPrice = prices[currentPlan];
-      const totalPrice = (unitPrice * currentQuantity).toFixed(2);
-      document.getElementById('cta-button-text').textContent = `Add to Botanical Bag — $${totalPrice}`;
+      if (plan === 'subscription') {
+        subCard.classList.add('ring-2', 'ring-primary', 'bg-surface-container-low');
+        subCard.classList.remove('bg-surface-container-lowest');
+        radioSub.classList.add('bg-primary', 'text-on-primary');
+        radioSub.classList.remove('bg-surface-container', 'text-transparent');
+
+        onetimeCard.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-low');
+        onetimeCard.classList.add('bg-surface-container-lowest');
+        radioOnetime.classList.remove('bg-primary', 'text-on-primary');
+        radioOnetime.classList.add('bg-surface-container', 'text-transparent');
+
+        cadenceBox.classList.remove('hidden');
+        basePrice = subscriptionPrice;
+      } else {
+        onetimeCard.classList.add('ring-2', 'ring-primary', 'bg-surface-container-low');
+        onetimeCard.classList.remove('bg-surface-container-lowest');
+        radioOnetime.classList.add('bg-primary', 'text-on-primary');
+        radioOnetime.classList.remove('bg-surface-container', 'text-transparent');
+
+        subCard.classList.remove('ring-2', 'ring-primary', 'bg-surface-container-low');
+        subCard.classList.add('bg-surface-container-lowest');
+        radioSub.classList.remove('bg-primary', 'text-on-primary');
+        radioSub.classList.add('bg-surface-container', 'text-transparent');
+
+        cadenceBox.classList.add('hidden');
+        basePrice = onetimePrice;
+      }
+      updatePriceDisplay();
     }
-  }
 
-  function triggerAddedEffect() {
-    const toast = document.getElementById('bag-toast');
-    const toastMsg = document.getElementById('toast-message');
-    toastMsg.textContent = `${currentQuantity}x Rise Elixir added to your apothecary bag.`;
-    
-    toast.classList.remove('-translate-y-28', 'opacity-0', 'pointer-events-none');
-    toast.classList.add('translate-y-0', 'opacity-100');
+    function setCadence(days, btn) {
+      const buttons = document.querySelectorAll('.cadence-btn');
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-forest-ink');
+      });
+      btn.classList.remove('bg-surface-container', 'text-forest-ink');
+      btn.classList.add('bg-primary', 'text-on-primary');
+    }
 
-    setTimeout(() => {
-      toast.classList.add('-translate-y-28', 'opacity-0', 'pointer-events-none');
-      toast.classList.remove('translate-y-0', 'opacity-100');
-    }, 2800);
-  }
+    function updateQuantity(delta) {
+      currentQuantity = Math.max(1, currentQuantity + delta);
+      document.getElementById('qty-val').innerText = currentQuantity;
+      updatePriceDisplay();
+    }
 
-  function quickAddPairing(name, price) {
-    const toast = document.getElementById('bag-toast');
-    const toastMsg = document.getElementById('toast-message');
-    toastMsg.textContent = `${name} ($${price}.00) added to your regimen.`;
-    
-    toast.classList.remove('-translate-y-28', 'opacity-0', 'pointer-events-none');
-    toast.classList.add('translate-y-0', 'opacity-100');
+    function updatePriceDisplay() {
+      const total = (basePrice * currentQuantity).toFixed(2);
+      document.getElementById('cart-btn-label').innerText = 'Add to Botanical Bag • $' + total;
+      
+      const mobilePreview = document.getElementById('mobile-price-preview');
+      if (mobilePreview) {
+        mobilePreview.innerText = '$' + total + ' • ' + (selectedPlan === 'subscription' ? 'Dispatch' : 'Single');
+      }
+    }
 
-    setTimeout(() => {
-      toast.classList.add('-translate-y-28', 'opacity-0', 'pointer-events-none');
-      toast.classList.remove('translate-y-0', 'opacity-100');
-    }, 2800);
-  }
+    function handleAddToCart() {
+      const btn = document.getElementById('add-to-cart-btn');
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">sync</span><span>Adding to Dispensed Bag...</span>';
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-lg">check_circle</span><span>Added to Dispensary Bag!</span>';
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 2000);
+      }, 700);
+    }
 
-  // Initialize display
-  document.addEventListener('DOMContentLoaded', () => {
-    updatePurchaseState('single');
-  });
-</script><footer class="w-full bg-surface-container-low mt-space-2xl px-gutter-mobile py-space-xl"><div class="max-w-container-max mx-auto flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Clinical Wellness Protocol</span><h3 class="font-headline-sm text-headline-sm text-forest-ink">6 Steps to Optimize Digestive Health</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Receive functional nutrition insights, botanical sourcing updates, and gut health methodologies curated by Abbie Jean Ciullo.</p><form class="flex flex-col gap-space-xs mt-space-xs" onsubmit="event.preventDefault();"><div class="flex gap-space-2xs"><input class="flex-1 h-11 px-space-sm bg-surface-container-lowest text-forest-ink placeholder:text-outline font-body-sm text-body-sm rounded-lg outline-none focus:ring-1 focus:ring-primary" placeholder="Your email address" type="email"/><button class="h-11 px-space-md bg-tertiary text-on-tertiary font-label-button text-label-button rounded-lg hover:bg-tertiary-container transition-colors" type="submit">Join</button></div></form></div><div class="grid grid-cols-2 gap-space-md pt-space-md"><div class="flex flex-col gap-space-2xs"><span class="font-label-caps text-label-caps text-forest-ink font-semibold uppercase tracking-wider">Signatures</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Rise Elixir</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">BiomeFx Gut Profile</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Baja Immersion Retreat</a></div><div class="flex flex-col gap-space-2xs"><span class="font-label-caps text-label-caps text-forest-ink font-semibold uppercase tracking-wider">Practitioner</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Abbie Jean Ciullo</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Consultations</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Editorial &amp; Research</a></div></div><div class="pt-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><a aria-label="Instagram" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-forest-ink hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">photo_camera</span></a><a aria-label="Podcast &amp; Audio" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-forest-ink hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span></a><a aria-label="Contact Inquiries" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-forest-ink hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">mail</span></a></div><p class="font-body-sm text-[11px] leading-relaxed text-outline">Disclaimer: These statements have not been evaluated by the FDA. Adaptogenesis formulas and functional protocols are not intended to diagnose, treat, cure, or prevent any medical condition.</p><p class="font-label-caps text-[10px] text-outline uppercase tracking-wider">© Adaptogenesis. All rights reserved.</p></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-2xs"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors gap-0.5" data-path="discover-home" href="index.html"><span class="material-symbols-outlined text-[22px]">spa</span><span class="font-label-caps text-[10px] tracking-wider">Discover</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors gap-0.5" data-path="shop-botanicals" href="collection.html"><span class="material-symbols-outlined text-[22px]">local_pharmacy</span><span class="font-label-caps text-[10px] tracking-wider">Shop</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors gap-0.5" data-path="consult-services" href="#"><span class="material-symbols-outlined text-[22px]">clinical_notes</span><span class="font-label-caps text-[10px] tracking-wider">Consult</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors gap-0.5" data-path="account-saved" href="#"><span class="material-symbols-outlined text-[22px]">favorite</span><span class="font-label-caps text-[10px] tracking-wider">Account</span></a></div></nav></body></html>
+    function addPairing(btn, name, price) {
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined text-sm">check</span> Added';
+      btn.classList.remove('bg-surface-container');
+      btn.classList.add('bg-chartreuse-vitality', 'text-forest-ink');
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.classList.add('bg-surface-container');
+        btn.classList.remove('bg-chartreuse-vitality', 'text-forest-ink');
+      }, 2500);
+    }
+  </script>
+</div></main><footer class="w-full bg-deep-spruce text-surface-container-low pt-space-4xl pb-space-2xl"><div class="max-w-container-max mx-auto px-gutter-mobile lg:px-gutter-desktop"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl pb-space-3xl"><div class="lg:col-span-5 flex flex-col gap-space-lg"><span class="font-label-caps text-label-caps tracking-[0.25em] text-chartreuse-vitality uppercase">Clinical Gut Restoration</span><h2 class="font-headline-md text-headline-md font-display-hero text-surface-bright tracking-tight leading-snug">Harmonizing modern metagenomic sequencing with Baja wildcrafted botanical alchemy.</h2><p class="font-body-md text-body-md text-surface-container-highest max-w-lg leading-relaxed">Rooted in the biodiverse microclimates of Baja California Sur, our compounded botanicals and functional protocols restore mucosal vitality, enteric nervous equilibrium, and intestinal terrain resilience.</p><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-chartreuse-vitality text-[20px]">verified</span><span class="font-body-sm text-body-sm text-surface-container-high">ISO-17025 Third-Party Tested • High Potency Extracts</span></div></div><div class="lg:col-span-7 flex flex-col justify-between gap-space-xl"><div class="bg-forest-ink/60 p-space-xl rounded-xl"><span class="font-headline-sm text-headline-sm font-display-hero text-surface-bright block mb-space-xs">The Terrain Dispatch</span><p class="font-body-sm text-body-sm text-surface-container-highest mb-space-md max-w-xl">Receive quarterly clinical monographs, adaptogenic brewing rituals, and invitations to seasonal gut restoration immersions in Todos Santos.</p><form class="flex flex-col sm:flex-row gap-space-xs" onsubmit="event.preventDefault();"><input class="flex-1 bg-surface-container-lowest text-forest-ink font-body-sm text-body-sm px-space-md py-space-sm rounded-lg placeholder:text-outline focus:outline-none" placeholder="Enter practitioner or patron email" type="email"/><button class="bg-tertiary hover:bg-tertiary-container text-on-tertiary px-space-lg py-space-sm rounded-lg font-label-button text-label-button tracking-wider transition-colors uppercase" type="submit">Subscribe</button></form></div><div class="grid grid-cols-2 md:grid-cols-3 gap-space-lg pt-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps tracking-widest text-herbaceous-mint uppercase mb-space-2xs">Dispensary</span><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="dispensary" href="#">Tinctures &amp; Tonics</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="dispensary" href="#">Adaptogenic Elixirs</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="clinical-formulas" href="#">Baja Wildharvest</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="clinical-formulas" href="#">Microbiome Powders</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps tracking-widest text-herbaceous-mint uppercase mb-space-2xs">Clinical Care</span><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="biomefx-clinic" href="#">BiomeFx Diagnostics</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="biomefx-clinic" href="#">Terrain Mapping</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="terrain-philosophy" href="#">Gut-Brain Protocols</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="about-abbie" href="#">Practitioner Referral</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-caps text-label-caps tracking-widest text-herbaceous-mint uppercase mb-space-2xs">Sanctuary &amp; Journal</span><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="terrain-philosophy" href="#">Terrain Manifesto</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="about-abbie" href="#">Abbie’s Story</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="botanical-journal" href="#">Clinical Monographs</a><a class="font-body-sm text-body-sm text-surface-container-high hover:text-chartreuse-vitality transition-colors" data-path="botanical-journal" href="#">Visit Baja Apothecary</a></div></div></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-surface-container-high"><div class="flex items-center gap-space-xs"><span class="font-headline-sm font-display-hero text-surface-bright">ADAPTOGENESIS</span><span class="text-primary-container">•</span><span>© 2024 All Rights Reserved. Todos Santos, BCS.</span></div><div class="flex items-center gap-space-lg text-surface-container-highest"><a class="hover:text-surface-bright transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-surface-bright transition-colors" data-path="botanical-journal" href="#">Certificate of Analysis</a><a class="hover:text-surface-bright transition-colors" data-path="dispensary" href="#">Cold-Chain Shipping</a></div></div><div class="mt-space-xl pt-space-lg"><p class="font-body-sm text-[11px] leading-relaxed text-surface-container-highest/60 text-center max-w-4xl mx-auto">*These statements have not been evaluated by the Food and Drug Administration or COFEPRIS. These functional formulations, adaptogenic tinctures, and gut terrain protocols are not intended to diagnose, treat, cure, or prevent any medical disease. Always consult your qualified functional health practitioner or primary integrative physician prior to commencing botanical therapies.</p></div></div></footer></body></html>

@@ -5,19 +5,19 @@ Rediseño de **Adaptogenesis / The Adaptogenic Lifestyle**, actualmente en Wix, 
 - **Sitio actual:** https://www.adaptogeniclifestyle.com/ (Wix)
 - **Fundadora:** Abbie Jean Ciullo — CFNC, MCS-P
 - **Dirección estética aprobada:** botica de lujo orgánico y medicina de terreno. Nada de estética SaaS o software.
-- **Enfoque:** mobile-first (~390px), padding lateral amplio, tipografía serif editorial y fondos de lino cálido/pergamino.
+- **Enfoque:** diseño responsive (desktop editorial + mobile), padding lateral amplio, tipografía serif editorial y fondos de lino cálido/pergamino.
 
-Este repo contiene 3 prototipos HTML navegables (generados con Google Stitch) que materializan esa dirección, listos para desplegarse como sitio estático en Vercel.
+Este repo contiene 3 prototipos HTML navegables (generados con Google Stitch, versión responsive) que materializan esa dirección, listos para desplegarse como sitio estático en Vercel.
 
 ## Páginas
 
 | Archivo | Pantalla | Descripción |
 |---|---|---|
-| [`index.html`](./index.html) | **Home** | Landing editorial con autoridad clínica, bio de Abbie Jean Ciullo, grid sintético de síntomas y showcase de boticario. |
-| [`collection.html`](./collection.html) | **Dispensary Archive** (Collection Template) | Filtros discretos, fórmula insignia (*Signature Reserve*) y grid de remedios. |
-| [`product.html`](./product.html) | **Rise Elixir** (PDP Template) | Compra única vs. suscripción (*Cyclical Dispatch*), activos botánicos con procedencia y sinergias clínicas. |
+| [`index.html`](./index.html) | **Home** | Landing editorial de escritorio con header sticky, hero split 55/45, grid asimétrico de productos y bio de Abbie Jean Ciullo. |
+| [`collection.html`](./collection.html) | **Dispensary Archive** (Collection Template) | Header con drawer mobile, fórmula insignia (*Signature Reserve*) y grid multi-columna de remedios. |
+| [`product.html`](./product.html) | **Rise Elixir** (PDP Template) | Layout de dos columnas con galería + panel de compra sticky, compra única vs. suscripción (*Cyclical Dispatch*), activos botánicos y sinergias clínicas. |
 
-Las tres pantallas están enlazadas entre sí (header/nav inferior y tarjetas de producto) para poder navegar el prototipo como un sitio real.
+Las tres pantallas están enlazadas entre sí (logo, nav "Dispensary" y tarjetas de producto) para poder navegar el prototipo como un sitio real. Cada plantilla es responsive: se adapta desde mobile hasta escritorio ancho (`max-w-7xl` / `container-max`), a diferencia de la primera entrega (mobile-only).
 
 Capturas de referencia de cada pantalla en [`previews/`](./previews).
 

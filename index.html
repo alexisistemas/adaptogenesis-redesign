@@ -1,353 +1,594 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><title>Adaptogenesis — Botanical Apothecary &amp; Gut Terrain Clinic</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#FBF8F2;}body{overscroll-behavior:none;-webkit-font-smoothing:antialiased;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>html{background:#E7E1D2}body{max-width:480px;margin:0 auto;position:relative;transform:translateZ(0);box-shadow:0 0 60px rgba(30,26,20,.18)}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"linen":"#FBF8F2","parchment":"#F5EFEB","parchment-deep":"#EDE5DB","sand-border":"#E3DACB","botanical-dark":"#222E23","botanical-olive":"#364837","botanical-leaf":"#516442","terracotta":"#B8673E","terracotta-soft":"#D28B63","ochre":"#C88E4B","earth-muted":"#706C62","soft-black":"#1C1E1B"},fontFamily:{"serif-display":["'Cormorant Garamond'","'EB Garamond'","serif"],"serif-editorial":["'EB Garamond'","serif"],"sans-clean":["'Plus Jakarta Sans'","sans-serif"]}}}};</script></head><body class="bg-linen text-soft-black font-sans-clean flex flex-col min-h-screen selection:bg-terracotta/20 selection:text-botanical-dark">
-<!-- Refined Editorial Boutique Header -->
-<header class="fixed top-0 w-full z-50 bg-linen/90 backdrop-blur-md border-b border-sand-border/60 pt-safe transition-all duration-300">
-<div class="h-16 flex items-center justify-between px-6">
-<div class="flex items-center gap-2">
-<img alt="Adaptogenesis Botanical Mark" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYjHetQdThD9rLfQaIhrqOqJmdzIjQVt-JVvOqIigZVq2KUb3qLWDDgt8Kew7v6-mp3hlhRt43VWLf9vBjDYbAyNHZsoPDt96RmznmqwCYhYn0Cl21x73saBRXL8DiBk4UQEPGF826PxQK7abqVV79TIKMkjAk5QQoMqxVo7x0BrA_DB7uammZJTr9VVdLLGmROB56G3g-PtvCR-auDrB-Ek-k0CQp6AXN0am9WzmYgYoOtrIqMvjg"/>
-<div class="flex flex-col">
-<span class="font-serif-display text-[21px] tracking-[0.14em] text-botanical-dark uppercase font-light leading-none">Adaptogenesis</span>
-<span class="font-serif-editorial italic text-[11px] tracking-wider text-earth-muted mt-0.5">Apothecary &amp; Gut Terrain</span>
+<html lang="en"><head><title>Adaptogenesis — Botanical Apothecary &amp; Gut Terrain Clinic</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "linen-surface": "#FBF9F5", "tertiary-fixed": "#ffdbd0", "herbaceous-mint": "#9DB39F", "background": "#fef9f0", "primary-fixed-dim": "#abcfb2", "primary-fixed": "#c7ecce", "secondary-fixed": "#d4eabe", "on-secondary-fixed": "#102005", "on-primary-container": "#c5eacc", "secondary": "#516442", "surface-tint": "#45664e", "secondary-container": "#d4eabe", "on-surface-variant": "#424842", "surface-dim": "#ded9d1", "primary": "#32533c", "outline": "#727972", "error": "#ba1a1a", "on-tertiary-container": "#ffd8cd", "surface-container-low": "#f8f3ea", "on-error-container": "#93000a", "secondary-fixed-dim": "#b8cda4", "error-container": "#ffdad6", "outline-variant": "#c2c8c0", "forest-ink": "#1B2A22", "on-tertiary-fixed": "#3a0a00", "surface": "#fef9f0", "chartreuse-vitality": "#ADC743", "on-primary-fixed-variant": "#2e4e37", "tertiary": "#7f351d", "deep-spruce": "#14211A", "tertiary-container": "#9d4c32", "inverse-surface": "#32302a", "on-secondary-container": "#576a48", "surface-container-lowest": "#ffffff", "surface-container-high": "#ece8df", "surface-container": "#f2ede4", "inverse-on-surface": "#f5f0e7", "muted-border": "#E4DDD0", "on-error": "#ffffff", "on-secondary-fixed-variant": "#3a4c2c", "on-secondary": "#ffffff", "on-surface": "#1d1c16", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#793019", "surface-bright": "#fef9f0", "surface-container-highest": "#e7e2d9", "primary-container": "#4a6b53", "inverse-primary": "#abcfb2", "surface-variant": "#e7e2d9", "on-primary": "#ffffff", "tertiary-fixed-dim": "#ffb59f", "on-primary-fixed": "#01210f", "on-background": "#1d1c16" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-4xl": "6rem", "space-xs": "0.5rem", "space-2xl": "3rem", "container-max": "1280px", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.75rem", "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "space-md": "1rem", "space-2xs": "0.25rem", "space-3xl": "4.5rem", "space-xl": "2rem" }, "fontFamily": { "body-lg": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "EB Garamond" ], "headline-md": [ "EB Garamond" ], "subheading-editorial": [ "EB Garamond" ], "headline-lg": [ "EB Garamond" ], "display-hero": [ "EB Garamond" ], "body-md": [ "Plus Jakarta Sans" ], "body-sm": [ "Plus Jakarta Sans" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-sm": [ "EB Garamond" ], "display-hero-mobile": [ "EB Garamond" ], "label-button": [ "Plus Jakarta Sans" ], "label-numeric": [ "Plus Jakarta Sans" ], "headline-md-mobile": [ "EB Garamond" ] }, "fontSize": { "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-lg-mobile": [ "30px", { "lineHeight": "36px", "fontWeight": "400" } ], "headline-md": [ "32px", { "lineHeight": "38px", "fontWeight": "500" } ], "subheading-editorial": [ "18px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600" } ], "headline-sm": [ "22px", { "lineHeight": "28px", "fontWeight": "500" } ], "display-hero-mobile": [ "38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "label-button": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "label-numeric": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "headline-md-mobile": [ "24px", { "lineHeight": "30px", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="w-full bg-forest-ink text-linen-surface py-2 text-center text-label-caps tracking-widest uppercase transition-colors">Complimentary carbon-neutral courier dispatch on orders over $75</div><header class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(27,42,34,0.04)]"><div class="h-28 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-between py-3"><div class="flex items-center justify-between"><div class="flex items-center gap-3"><img alt="Minimalist modern botanical emblem logo for 'ADAPTOGENESIS', featuring an elegant stylized medicinal herb leaf branch inside an organic fine circular crest, luxury apothecary aesthetic, clean vector line work, dark forest green #23372B on transparent background. Design context: - Primary color: #4a6b53
+- Font: ebGaramond
+- Mode: light
+- Roundness: rounded-sm
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XzAmsUKA1VENAVLe622aM5lJLt1cB66xEk_ULVqkeWkgak_f0D17PUX8ea1lIT-fAPmIQpDVsvu2q1QLqdXbD1eXj9xtDdDzVNa0opw_fV7DgoiokAdKne-XCTRzEn6VTo3E6RV7ifaBWA-dnbEVKUih4-BsC_M0cEWbbYOrGYXQ8ko6XQCo24G_EAPlnYH2Z5SVzltFuGCl3bHqyxhJjAyOQeQqeQ7rF73NApEkvu8i3G6ublFCHgMjM"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-forest-ink leading-none">ADAPTOGENESIS</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider mt-1">Baja California Sur — Botanical Dispensary &amp; Clinic</span></div></div><div class="flex items-center gap-6"><button aria-label="Search Formulas" class="text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" type="button"><span class="material-symbols-outlined text-[20px]">search</span><span class="font-label-caps text-label-caps hidden sm:inline">Search</span></button><div class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface cursor-pointer"><span class="font-label-numeric text-label-numeric">USD ($)</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><button class="relative flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-forest-ink transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">local_mall</span><span class="font-label-button text-label-button hidden md:inline">Botanical Bag</span><span class="flex items-center justify-center h-5 min-w-[20px] px-1 rounded-full bg-tertiary text-on-tertiary font-label-caps text-[10px]">0</span></button></div></div><nav class="flex items-center justify-center gap-8 border-t border-muted-border/40 pt-2" data-active-classes="text-primary font-bold"><a aria-current="page" class="transition-colors text-primary font-bold" data-path="dispensary" href="collection.html">Dispensary</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="formulas" href="collection.html">Formulas</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="biomefx-clinic" href="#">BiomeFx™ Clinic</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="terrain-philosophy" href="#">Terrain Philosophy</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-abbie" href="#">About Abbie</a><a class="font-label-button text-label-button text-on-surface-variant hover:text-on-surface transition-colors" data-path="apothecary-journal" href="#">Apothecary Journal</a></nav></div></header><main class="w-full bg-surface"><div class="flex flex-col w-full selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- ==================== HERO SECTION (SPLIT 55/45) ==================== -->
+<section class="relative w-full pt-space-xl pb-space-3xl px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Narrative Left Column (55%) -->
+<div class="lg:col-span-7 space-y-space-lg pr-0 lg:pr-space-xl">
+<div class="inline-flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-chartreuse-vitality shadow-sm"></span>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Baja California Sur • Artisanal Botanicals &amp; Clinical Metagenomics</span>
 </div>
-</div>
-<div class="flex items-center gap-4">
-<button aria-label="Search" class="text-botanical-dark hover:text-terracotta transition-colors p-1">
-<span class="material-symbols-outlined text-[20px] font-light">search</span>
-</button>
-<button aria-label="Shopping Bag" class="relative text-botanical-dark hover:text-terracotta transition-colors p-1">
-<span class="material-symbols-outlined text-[20px] font-light">local_mall</span>
-<span class="absolute -top-0.5 -right-1 w-4 h-4 rounded-full bg-terracotta text-[#FFFDF9] font-serif-display text-[10px] leading-none flex items-center justify-center font-normal">2</span>
-</button>
-</div>
-</div>
-</header>
-<main class="flex-1 flex flex-col relative w-full pt-16 bg-linen pb-28">
-<!-- Editorial Hero Section -->
-<section class="relative w-full pt-8 pb-12 px-6">
-<div class="flex flex-col gap-6">
-<!-- Sub-headline kicker -->
-<div class="flex items-center gap-2.5">
-<span class="w-1.5 h-1.5 rounded-full bg-terracotta/70"></span>
-<span class="font-sans-clean text-[11px] tracking-[0.22em] text-earth-muted uppercase font-medium">Baja California Sur • Artisanal Botanicals</span>
-</div>
-<!-- Headline -->
-<div class="flex flex-col gap-3">
-<h1 class="font-serif-display text-[38px] leading-[1.12] text-botanical-dark font-normal tracking-[-0.01em]">
-          Handcrafted Botanicals <br/>
-<span class="italic font-serif-display font-light text-terracotta">&amp; Functional Terrain</span> <br/>
-          Medicine.
+<h1 class="font-display-hero text-display-hero text-forest-ink font-light tracking-tight leading-[1.08]">
+          Handcrafted Botanicals &amp; <em class="font-normal italic text-primary">Functional Terrain</em> Medicine.
         </h1>
-<p class="font-serif-editorial text-[18px] text-earth-muted leading-relaxed italic pr-2">
-          Cellular resilience cultivated through whole-organism gut metagenomics and sun-cured desert adaptogens.
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+          Restoring cellular sovereignty through clinical whole-organism gut metagenomics and artisanal sun-cured desert adaptogens. Harvested between the Pacific tides and the Sierra de la Laguna foothills.
         </p>
+<!-- CTA Cluster -->
+<div class="pt-space-xs flex flex-wrap items-center gap-5">
+<a class="px-8 py-4 bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-button text-label-button rounded transition-all duration-200 shadow-sm hover:shadow-md inline-flex items-center gap-2 group" data-path="dispensary" href="collection.html">
+<span>Explore Botanical Dispensary</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="px-7 py-4 bg-surface-container hover:bg-surface-container-high text-forest-ink font-label-button text-label-button rounded transition-colors inline-flex items-center gap-2" data-path="biomefx-clinic" href="#">
+<span class="material-symbols-outlined text-[18px] text-primary">clinical_notes</span>
+<span>Book Clinical Consult</span>
+</a>
 </div>
-<!-- Luxury Lifestyle Imagery -->
-<div class="relative w-full h-72 rounded-sm overflow-hidden shadow-[0_4px_20px_-4px_rgba(43,58,44,0.08)] bg-parchment border border-sand-border/80">
-<div class="w-full h-full bg-cover bg-center" data-alt="Warm sunlight illuminating amber glass apothecary dropper bottles and dried adaptogenic reishi mushrooms, wild desert cardon cactus blooms, and green medicinal herbs on raw textured linen surface with soft organic shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRzIdJIo11BnYFnhHqygdmAqlz-PJPjpchCPkt6p1UJCd29DFY1BhJweA4ri7cH4npE3mOJKRbs-wLUe_9EzfwPyq_lKJPxiQ8FpalS5unjUYYBvFJGGgWgJuwSVUJeJ8uENT0ERz5TIGeLiF-rNnjKIjBBW4JUuG0ZVn-tlUEnP0xS5MFQ8J_-5iH0HClz28wyqnawtbt7I_VAro-EQZ66B10Advjxc8gHxQ0oAYugin_RexrNd1O')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-botanical-dark/70 via-transparent to-transparent flex items-end p-4">
-<p class="font-serif-editorial italic text-[13px] text-[#FAF7F0]/90 tracking-wide">
-            Solar-infused small-batch remedies harvested in Todos Santos
-          </p>
-</div>
-</div>
-<!-- Understated Editorial CTAs -->
-<div class="flex flex-col gap-3 pt-1">
-<a class="w-full h-12 bg-botanical-olive text-[#FBF8F2] font-sans-clean text-[12px] tracking-[0.18em] uppercase font-medium flex items-center justify-center rounded-sm hover:bg-botanical-dark active:scale-[0.99] transition-all shadow-sm" href="#apothecary-catalog">
-          Explore Formulas
-        </a>
-<a class="w-full h-12 bg-transparent text-botanical-dark border border-botanical-dark/30 font-sans-clean text-[12px] tracking-[0.18em] uppercase font-medium flex items-center justify-center rounded-sm hover:bg-parchment active:bg-sand-border/40 transition-colors" href="#consult-section">
-          Book Clinical Consult
-        </a>
-</div>
-<!-- Typographic Value Pillars (Replaces tech pills) -->
-<div class="pt-6 border-t border-sand-border/70 grid grid-cols-2 gap-y-4 gap-x-6">
-<div class="flex flex-col">
-<span class="font-serif-display text-[15px] text-botanical-dark font-medium tracking-wide">Wild-Foraged Baja Flora</span>
-<span class="font-sans-clean text-[11px] text-earth-muted mt-0.5 leading-snug">Native desert cardon &amp; wild ocean botanicals.</span>
-</div>
-<div class="flex flex-col">
-<span class="font-serif-display text-[15px] text-botanical-dark font-medium tracking-wide">Metagenomic Science</span>
-<span class="font-sans-clean text-[11px] text-earth-muted mt-0.5 leading-snug">BiomeFx™ precision DNA sequencing.</span>
-</div>
-<div class="flex flex-col">
-<span class="font-serif-display text-[15px] text-botanical-dark font-medium tracking-wide">Artisanal Extraction</span>
-<span class="font-sans-clean text-[11px] text-earth-muted mt-0.5 leading-snug">Dual-stage triple decoctions in amber glass.</span>
-</div>
-<div class="flex flex-col">
-<span class="font-serif-display text-[15px] text-botanical-dark font-medium tracking-wide">Pure Whole Terrain</span>
-<span class="font-sans-clean text-[11px] text-earth-muted mt-0.5 leading-snug">Zero binders, artificial isolates, or fillers.</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Editorial Terrain Philosophy Section -->
-<section class="w-full py-12 bg-parchment px-6 border-y border-sand-border/60">
-<div class="flex flex-col gap-6">
-<div class="flex flex-col gap-2">
-<span class="font-sans-clean text-[11px] tracking-[0.2em] text-terracotta uppercase font-medium">Philosophy of Terrain</span>
-<h2 class="font-serif-display text-[28px] text-botanical-dark leading-snug font-normal">
-          Listening to the language of your inner ecosystem.
-        </h2>
-</div>
-<p class="font-serif-editorial text-[16px] text-soft-black/85 leading-relaxed">
-        Symptoms like chronic digestive sluggishness, brain fog, hormonal fluctuations, and depletion are not personal failings—they are communicative signals of internal ecosystem imbalance. Rather than subduing signals, we nourish the foundational soil.
-      </p>
-<!-- Editorial Quote Card -->
-<div class="bg-linen p-6 rounded-sm border-l-2 border-terracotta shadow-[0_2px_12px_rgba(43,58,44,0.04)]">
-<p class="font-serif-editorial text-[18px] text-botanical-dark italic leading-relaxed">
-          “When the terrain is restored with sovereign medicinal botanicals and precision biology, vitality is the organic, effortless consequence.”
-        </p>
-<div class="mt-4 pt-3 border-t border-sand-border/50 flex flex-col">
-<span class="font-sans-clean text-[11px] tracking-[0.18em] uppercase font-semibold text-botanical-dark">Abbie Jean Ciullo</span>
-<span class="font-serif-editorial text-[13px] text-earth-muted italic">CFNC, MCS-P • Functional Nutritionist &amp; Herbalist</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Artisan Boutique Catalog Showcase -->
-<section class="w-full py-14 bg-linen px-6" id="apothecary-catalog">
-<div class="flex flex-col gap-8">
-<!-- Section Title -->
-<div class="flex items-baseline justify-between border-b border-sand-border/70 pb-3">
+<!-- Micro Provenance Strip -->
+<div class="pt-space-md grid grid-cols-3 gap-6 bg-surface-container-low p-space-md rounded-lg">
 <div>
-<span class="font-sans-clean text-[10px] tracking-[0.25em] text-earth-muted uppercase font-medium">The Dispensary</span>
-<h2 class="font-serif-display text-[28px] text-botanical-dark font-normal tracking-wide">Botanical Formulas</h2>
+<span class="font-label-numeric text-label-numeric text-forest-ink block font-semibold">23°29′N</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Todos Santos Lab</span>
 </div>
-<span class="font-serif-editorial italic text-[14px] text-terracotta">Small Batch Release</span>
+<div>
+<span class="font-label-numeric text-label-numeric text-forest-ink block font-semibold">1:3 Solar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Decoction Potency</span>
 </div>
-<!-- Product 1: Featured Flagship (Rise Elixir) -->
-<div class="flex flex-col bg-parchment/60 rounded-sm border border-sand-border p-4 shadow-[0_2px_10px_rgba(0,0,0,0.03)]">
-<div class="relative w-full h-64 rounded-sm overflow-hidden bg-parchment">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Artisanal amber glass dropper tincture bottle of Rise Elixir labeled Adaptogenesis on a warm stone slab with raw ashwagandha root, cordyceps militaris mushrooms, and dried holy basil leaves bathed in soft natural daylight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUdB4Ftj0Kb1wJOWWam8onsOBQjH0Bny0et2LYNCJu6dTvzjlq_sQC1bHFlfRsHM2Opw-rEWNG2PmKFSALPC7Qrg8NbtbzaRmBTMctGW3CKi0Fb4GDxn0AzPgjGfJ_22q_FCHothJNxggethrMKhUZSYj8gDpyY7T5KWw7snflmsAUrN2i67xga85XhR5UxCH2Q62iykIzBAoWd6A4tRwE8Nph5VFyyQnaK2YPNj8Lsi7ee_W4LyDl')"></div>
-<span class="absolute top-3 left-3 px-2.5 py-1 bg-linen/95 backdrop-blur-sm border border-sand-border text-botanical-dark font-sans-clean text-[9px] tracking-[0.18em] uppercase font-semibold">
-            Signature Reserve
-          </span>
+<div>
+<span class="font-label-numeric text-label-numeric text-forest-ink block font-semibold">99.9%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DNA Keystone Read</span>
 </div>
-<div class="flex flex-col gap-1.5 mt-4">
-<div class="flex items-baseline justify-between">
-<a href="product.html"><h3 class="font-serif-display text-[22px] text-botanical-dark font-normal tracking-wide hover:text-terracotta transition-colors">Rise Elixir</h3></a>
-<span class="font-serif-editorial text-[18px] text-botanical-dark font-normal">$48.00</span>
 </div>
-<span class="font-sans-clean text-[11px] text-terracotta tracking-wider uppercase font-medium">Daily Adrenal &amp; Cellular Vitality</span>
-<p class="font-serif-editorial text-[15px] text-earth-muted leading-relaxed italic">
-            Wild Cordyceps, KSM-66 Ashwagandha &amp; solar-infused Holy Basil harvested at morning peak potency.
+</div>
+<!-- Editorial Visual Right Column (45%) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl overflow-hidden shadow-xl bg-surface-container aspect-[4/5]">
+<img class="w-full h-full object-cover" data-alt="Dark amber glass apothecary dropper bottles with minimalist paper labels arranged artfully on sunlit raw beige travertine slab alongside dried medicinal desert herbs, sprigs of wild cardon succulent, glass beaker with golden botanical oil, warm natural sunlight cast through linen drapery, Todos Santos Mexico luxury apothecary aesthetic, organic muted sage green and warm linen palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzXPs43edhu_CXDtURg-xHGJxrX1eAh1b7pNaaDysuAOwpa7bE62GwG7bsZ5OA_BpRSrPihwlcK7JyZnMqx4Caq3q5ozWxkVnc86POiXH7tQJSVT66toGYk8IpfJ4cgQ52tjyqM0CNXCacKDqLGytamOCfiHCyqwhaW1GhirEqHm6Dpsqc4HqVDH1kk8T97710aoESX1zXWIhBaLI8WhvPssOhUrjYXoiQvdV3zeuOfwZnNeGDn_GX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-spruce/60 via-transparent to-transparent"></div>
+<!-- Floating Editorial Pill Badge -->
+<div class="absolute bottom-6 left-6 right-6 bg-surface/90 backdrop-blur-md p-4 rounded shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Current Apothecary Batch</span>
+<span class="font-headline-sm text-headline-sm text-forest-ink">Solstice Maceration No. 04</span>
+</div>
+<span class="px-2.5 py-1 bg-secondary-container text-on-secondary-container rounded font-label-caps text-[10px] uppercase font-semibold">Limited Cellar</span>
+</div>
+</div>
+</div>
+<!-- Offset Decorative Stamp -->
+<div class="hidden xl:flex absolute -bottom-6 -left-6 w-28 h-28 rounded-full bg-forest-ink text-linen-surface p-2 shadow-xl items-center justify-center text-center">
+<div class="w-full h-full rounded-full bg-deep-spruce flex flex-col items-center justify-center p-1">
+<span class="material-symbols-outlined text-[18px] text-chartreuse-vitality">eco</span>
+<span class="font-label-caps text-[9px] uppercase tracking-wider text-herbaceous-mint mt-0.5 leading-tight">Wild-Craft<br/>Organic</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== 4-COLUMN CORE COMMITMENTS STRIP ==================== -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Commitment 1 -->
+<div class="space-y-space-2xs bg-surface p-space-md rounded-lg shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">psychiatry</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary block uppercase">Pillar I • Sourcing</span>
+<h2 class="font-headline-sm text-headline-sm text-forest-ink">Wild-Foraged Baja Flora</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Native endemic desert cardon cactus, wild oceanic kelp from Bahía Magdalena, and biodynamic coastal sage harvested according to moon cycles.
           </p>
-<span class="font-sans-clean text-[10px] text-earth-muted/80 tracking-wider uppercase mt-1">
-            Wild-Harvested • Small-Batch Extraction • 50ml Amber Bottle
-          </span>
 </div>
-<div class="mt-4 pt-3 border-t border-sand-border/70 flex gap-2">
-<button class="flex-1 h-11 bg-botanical-olive text-[#FAF7F0] font-sans-clean text-[11px] tracking-[0.16em] uppercase font-medium flex items-center justify-center rounded-sm active:bg-botanical-dark transition-colors" onclick="this.innerText='Added to Apothecary Bag'; setTimeout(()=&gt;this.innerText='Acquire Bottle — $48', 1400);">
-            Acquire Bottle — $48
-          </button>
+<!-- Commitment 2 -->
+<div class="space-y-space-2xs bg-surface p-space-md rounded-lg shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">biotech</span>
 </div>
+<span class="font-label-caps text-label-caps text-tertiary block uppercase">Pillar II • Diagnostics</span>
+<h2 class="font-headline-sm text-headline-sm text-forest-ink">Metagenomic Precision</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            BiomeFx™ whole-genome shotgun sequencing reading 99.9% of microbial keystones, short-chain fatty acids, and mucosal lining status.
+          </p>
 </div>
-<!-- 2-Column Artisan Grid for Secondary Formulas -->
-<div class="grid grid-cols-2 gap-4">
-<!-- Product 2: Digestive Bitters -->
-<div class="flex flex-col justify-between bg-parchment/60 rounded-sm border border-sand-border p-3">
-<div class="flex flex-col">
-<div class="relative w-full h-36 rounded-sm overflow-hidden bg-parchment">
-<div class="w-full h-full bg-cover bg-center" data-alt="Amber botanical bottle of Digestive Bitters tincture labeled Adaptogenesis surrounded by fresh dandelion leaves, gentian root slices, and green artichoke flower head on rustic cream paper" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXfUVfP5LcwDGgPYsduHnKs650Q1fgK-aDSsIRwgrI9PAK4V4a86bLMIxh5Fbd-KV_qT1SX5gmHc7HtKtrgUz9MVu-zv7XJYhGeyaJ9SUEUf1MZH8dPxMn4Ew16WUnsf_d3hZOx6R6NBcP4S7aWgIyjnbT7fzqq2rTrL04zq57QstIKpdgi5OsNeoJX_TSQvvgCbviwPzUecqkqJgLYumd5hFcGa4DVRaSCYKP1o_FpHjACUyK6eiH')"></div>
+<!-- Commitment 3 -->
+<div class="space-y-space-2xs bg-surface p-space-md rounded-lg shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">sunny</span>
 </div>
-<div class="flex flex-col mt-3">
-<h4 class="font-serif-display text-[18px] text-botanical-dark font-normal leading-tight">Digestive Bitters</h4>
-<span class="font-sans-clean text-[10px] text-terracotta tracking-wider uppercase mt-0.5">Carminative Bile Support</span>
-<span class="font-serif-editorial text-[16px] text-botanical-dark font-medium mt-1">$34.00</span>
-<span class="font-sans-clean text-[9px] text-earth-muted uppercase tracking-wider mt-1">Gentian &amp; Artichoke • 50ml</span>
+<span class="font-label-caps text-label-caps text-tertiary block uppercase">Pillar III • Alchemy</span>
+<h2 class="font-headline-sm text-headline-sm text-forest-ink">Dual-Stage Solar Extraction</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Triple pressurized hydro-ethanolic and ultrasonic decoctions preserved exclusively in biophotonic Miron violet glass.
+          </p>
 </div>
+<!-- Commitment 4 -->
+<div class="space-y-space-2xs bg-surface p-space-md rounded-lg shadow-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[20px]">grain</span>
 </div>
-<button class="w-full h-9 mt-3 bg-transparent border border-botanical-dark/30 text-botanical-dark font-sans-clean text-[10px] tracking-[0.14em] uppercase font-medium rounded-sm active:bg-parchment transition-colors" onclick="this.innerText='Selected'; setTimeout(()=&gt;this.innerText='Add to Bag', 1200);">
-            Add to Bag
-          </button>
-</div>
-<!-- Product 3: Cardon Flower Essence -->
-<div class="flex flex-col justify-between bg-parchment/60 rounded-sm border border-sand-border p-3">
-<div class="flex flex-col">
-<div class="relative w-full h-36 rounded-sm overflow-hidden bg-parchment">
-<div class="w-full h-full bg-cover bg-center" data-alt="Delicate frosted glass flower essence bottle resting beside a towering blooming Cardon cactus in the sun-drenched Baja California desert with soft ethereal sunlight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4vjtQ_nebAVZzCwbeVSvUL1pxq9t1xabzmFixXFTtCUDlYY9SDEJP2TujV9QlNk0kKVPch0E945_6HiszBS54Ar3WVowldzPImCxWxqrmt9K7ikd7HaD4xlbDQm50yHuELhblhdFV7PJFXKCO_LqGAXZW1EzrWD59xdgvfurRqXgvbmliIJCja0H6AgQJo7TiGE8SR_terFDBeoGVQkB_8m76krh_D6VGPmQnrv4z3hkcXNjT-ML5')"></div>
-</div>
-<div class="flex flex-col mt-3">
-<h4 class="font-serif-display text-[18px] text-botanical-dark font-normal leading-tight">Cardon Essence</h4>
-<span class="font-sans-clean text-[10px] text-terracotta tracking-wider uppercase mt-0.5">Subtle Nervous System</span>
-<span class="font-serif-editorial text-[16px] text-botanical-dark font-medium mt-1">$28.00</span>
-<span class="font-sans-clean text-[9px] text-earth-muted uppercase tracking-wider mt-1">Baja Desert Bloom • 30ml</span>
+<span class="font-label-caps text-label-caps text-tertiary block uppercase">Pillar IV • Purity</span>
+<h2 class="font-headline-sm text-headline-sm text-forest-ink">Pure Whole Terrain</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Zero isolated synthetic compounds, flow agents, or silicon dioxidates. Only whole active spectrum herbal constituents that your body recognizes.
+          </p>
 </div>
 </div>
-<button class="w-full h-9 mt-3 bg-transparent border border-botanical-dark/30 text-botanical-dark font-sans-clean text-[10px] tracking-[0.14em] uppercase font-medium rounded-sm active:bg-parchment transition-colors" onclick="this.innerText='Selected'; setTimeout(()=&gt;this.innerText='Add to Bag', 1200);">
-            Add to Bag
-          </button>
+</div>
+</section>
+<!-- ==================== THE TERRAIN PHILOSOPHY (EDITORIAL SPLIT) ==================== -->
+<section class="w-full py-space-4xl px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl">
+<!-- Sticky Manifesto Column (Left 1/3) -->
+<div class="lg:col-span-4 lg:sticky lg:top-36 self-start space-y-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">The Functional Paradigm</span>
+<h2 class="font-headline-lg text-headline-lg text-forest-ink leading-tight">
+          Listening to the Language of Your Inner Ecosystem.
+        </h2>
+<div class="p-space-lg bg-surface-container rounded-xl shadow-sm space-y-4">
+<span class="material-symbols-outlined text-[28px] text-tertiary">format_quote</span>
+<blockquote class="font-subheading-editorial text-subheading-editorial italic text-forest-ink leading-relaxed">
+            “When the terrain is restored with sovereign medicinal botanicals and precision biology, vitality is the organic, effortless consequence.”
+          </blockquote>
+<div class="flex items-center gap-3 pt-2">
+<div class="w-10 h-10 rounded-full bg-primary-container text-linen-surface flex items-center justify-center font-headline-sm">A</div>
+<div>
+<span class="font-headline-sm text-[16px] text-forest-ink block leading-none">Abbie Jean Ciullo</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Founder, CFNC &amp; Master Herbalist</span>
 </div>
 </div>
-<!-- Clinical Diagnostic Integration (BiomeFx) -->
-<div class="bg-parchment-deep/70 rounded-sm border border-sand-border p-5 flex flex-col gap-3">
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg space-y-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Terrain Restoration Rate</span>
+<span class="font-label-numeric font-bold text-primary">94.2%</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-2 bg-surface-dim rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 94%;"></div>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block">Measured over 600+ patient metagenomic re-tests in 2024.</span>
+</div>
+</div>
+<!-- 2x2 Pillars Grid (Right 2/3) -->
+<div class="lg:col-span-8 space-y-space-lg">
+<div class="bg-surface-container-low p-space-lg rounded-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-tertiary uppercase">Pathology vs. Terrain</span>
+<h3 class="font-headline-md text-headline-md text-forest-ink mt-1">Four Pillars of Sovereign Ground</h3>
+</div>
+<span class="px-3 py-1 bg-surface rounded-full text-secondary font-label-caps text-label-caps shadow-sm">Allopathic Contrast Matrix</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Conventional wellness perpetually suppresses the downstream symptom. Adaptogenesis interrogates the foundational soil: the gut microbiome, cellular fluid dynamics, and the nervous system's tone.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Pillar Card 1 -->
+<div class="p-space-xl bg-surface-container rounded-xl shadow-sm hover:shadow-md transition-shadow space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">STAGE 01</span>
+<span class="material-symbols-outlined text-primary text-[22px]">monitoring</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">Terrain &amp; Fluid Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Comprehensive constitutional mapping that correlates endocrine rhythms, sleep architecture, sympathetic overdrive, and lymphatic stagnation.
+            </p>
+<div class="pt-2 text-primary font-label-caps text-label-caps flex items-center gap-1">
+<span>Constitutional Mapping</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Pillar Card 2 -->
+<div class="p-space-xl bg-surface-container rounded-xl shadow-sm hover:shadow-md transition-shadow space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">STAGE 02</span>
+<span class="material-symbols-outlined text-primary text-[22px]">hub</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">Metagenomic Sequencing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Sequencing 99.9% of keystone microbial species to eliminate blind guessing. We identify specific dysbiosis patterns, LPS inflammation, and enzyme deficits.
+            </p>
+<div class="pt-2 text-primary font-label-caps text-label-caps flex items-center gap-1">
+<span>BiomeFx™ Integration</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Pillar Card 3 -->
+<div class="p-space-xl bg-surface-container rounded-xl shadow-sm hover:shadow-md transition-shadow space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-tertiary font-bold">STAGE 03</span>
+<span class="material-symbols-outlined text-tertiary text-[22px]">nature</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">Botanical Compounding</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Alchemizing native Baja adaptogens, micro-extracted mushroom fruiting bodies, and bitter glycosides engineered precisely for your microbiome needs.
+            </p>
+<div class="pt-2 text-tertiary font-label-caps text-label-caps flex items-center gap-1">
+<span>Apothecary Lab Protocol</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+<!-- Pillar Card 4 -->
+<div class="p-space-xl bg-surface-container rounded-xl shadow-sm hover:shadow-md transition-shadow space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary font-bold">STAGE 04</span>
+<span class="material-symbols-outlined text-primary text-[22px]">cycle</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">HPA-Gut Axis Integration</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Restoring the bi-directional vagus pathway. Sustainable nervous system safety protocols ensure that newly introduced flora thrive permanently.
+            </p>
+<div class="pt-2 text-primary font-label-caps text-label-caps flex items-center gap-1">
+<span>Telehealth Supervision</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== THE DISPENSARY ARCHIVE (DESKTOP SHOWCASE) ==================== -->
+<section class="w-full bg-surface-container-low py-space-4xl px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-1">Small Batch Releases • Winter Harvest No. 04</span>
+<h2 class="font-headline-lg text-headline-lg text-forest-ink">The Botanical Dispensary Shelf</h2>
+</div>
+<a class="font-label-button text-label-button text-primary hover:text-forest-ink inline-flex items-center gap-2 group transition-colors" data-path="dispensary" href="collection.html">
+<span>View Entire Dispensary (8 Formulas)</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Asymmetrical 3-Column Product Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Featured Card: Rise Elixir (Spans 6 cols / Half Grid) -->
+<div class="lg:col-span-6 bg-surface rounded-xl shadow-md overflow-hidden flex flex-col justify-between group">
+<div class="relative w-full h-80 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Editorial close-up of dark amber medicinal dropper bottle labeled 'Rise Elixir' resting beside fresh split cordyceps mushrooms, holy basil leaves, and golden honey drizzle on warm off-white stone pedestal, high-end botanical apothecary styling, soft natural morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0v4NJWp_SB2xKK8bUQLvqQ2lKXMmFK8ldshZ4zRX6-3L-xiOKTL-JSBK13wfjQfmxxPadhAHy8f4LZdkburMe0UJBO6dIftz3B6OdglmCuBZlPJd7QTv1_VNqgiWr-G0KbKKXBYXXgcKkOJbP3mESEv9twLXTAcQUArEm87LQmypyvMeWoeMfOAorHvbl8ARc9VQkobYrr0dav48XgYB69nZe01SC1RVfc7aXJLw3Yfiostdw8KEP"/>
+<span class="absolute top-4 left-4 px-3 py-1 bg-surface/90 backdrop-blur rounded font-label-caps text-label-caps text-forest-ink">Harvest Release No. 04</span>
+<span class="absolute top-4 right-4 px-3 py-1 bg-tertiary text-on-tertiary rounded font-label-caps text-label-caps">Flagship</span>
+</div>
+<div class="p-space-xl space-y-space-md flex-1 flex flex-col justify-between">
+<div class="space-y-2">
 <div class="flex items-baseline justify-between">
-<span class="font-sans-clean text-[10px] tracking-[0.2em] text-terracotta uppercase font-semibold">
-            Precision Metagenomics
-          </span>
-<span class="font-serif-editorial text-[20px] text-botanical-dark">$395.00</span>
+<h3 class="font-headline-md text-headline-md text-forest-ink"><a class="hover:text-primary transition-colors" href="product.html">Rise Elixir</a></h3>
+<span class="font-label-numeric text-[20px] font-semibold text-forest-ink">$48.00 USD</span>
 </div>
-<h3 class="font-serif-display text-[22px] text-botanical-dark leading-snug">BiomeFx™ Whole Genome Stool Profile &amp; Protocol</h3>
-<p class="font-serif-editorial text-[15px] text-earth-muted leading-relaxed italic">
-          Deep sequencing of microbial DNA paired with an individual 60-minute interpretive session and bespoke herbal formulation roadmap.
-        </p>
-<a class="w-full h-11 mt-1 bg-botanical-dark text-[#FBF8F2] font-sans-clean text-[11px] tracking-[0.16em] uppercase font-medium flex items-center justify-center rounded-sm hover:bg-botanical-olive transition-colors" href="#consult-section">
-          Inquire for Clinical Testing
-        </a>
+<span class="font-subheading-editorial text-subheading-editorial italic text-secondary block">
+                Daily Adrenal Resilience &amp; Cellular Stamina
+              </span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Dual-extracted organic wild Cordyceps militaris, Krishna holy basil (Tulsi), and Baja desert cardon extract. Preserved with raw honey vinegar. Calms the sympathetic spike while optimizing ATP cellular production.
+              </p>
+<!-- Extraction Potency Pill Tags -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-2.5 py-1 bg-surface-container text-forest-ink rounded-full font-label-caps text-[10px]">1:2 Dual Hydro-Ethanolic</span>
+<span class="px-2.5 py-1 bg-surface-container text-forest-ink rounded-full font-label-caps text-[10px]">Miron Glass 50ml</span>
+<span class="px-2.5 py-1 bg-surface-container text-forest-ink rounded-full font-label-caps text-[10px]">Zero Cane Sugar</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between gap-4">
+<button class="flex-1 py-3 bg-tertiary hover:bg-tertiary-container text-on-tertiary font-label-button text-label-button rounded transition-colors flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Quick Add to Bag</span>
+</button>
+<button aria-label="Formula Specs" class="p-3 bg-surface-container hover:bg-surface-container-high text-forest-ink rounded transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Secondary Column (3 cols) - Cardon Essence -->
+<div class="lg:col-span-3 bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col justify-between">
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Luxury small apothecary amber glass tincture dropper bottle labeled 'Cardon Essence' centered on smooth linen fabric with dried Baja coastal flowers, soft olive and sand tones, editorial product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOms84yiTRMswUuK1GcKHxFYCSNTuD5BW-8s_-6jwAG8o0iF1rNeC53AKZmRONcRv1qMrx45Zxjb-r5LFYZH71I0ef489NJlVFupFAJ-cvha1iiEoJd3itmcMqmWmDKuU8m_xtOdhwu_xvyNHQa8cxk_kCh80XNCgZXVPGlQebztIl4_fpXKF0fyAweFZgo55-UEkO8XVXumnUL1v9WiGExrz7PzrS4L54aZx1-PB1tSczxHQUD74u"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface/90 rounded font-label-caps text-[10px] text-forest-ink">Bioregional</span>
+</div>
+<div class="p-space-lg space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">Cardon Essence</h4>
+<span class="font-label-numeric text-label-numeric font-semibold text-forest-ink">$28.00</span>
+</div>
+<span class="font-subheading-editorial text-[14px] italic text-secondary block mb-2">Vagus Tone &amp; Nervous Ground</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Flower and spine vibrational extract of the giant Pachycereus pringlei. Cultivates profound somatic stillness during acute mental overwhelm.
+              </p>
+</div>
+<button class="w-full py-2.5 bg-surface-container hover:bg-surface-container-high text-forest-ink font-label-button text-[13px] rounded transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add ($28)</span>
+</button>
+</div>
+</div>
+<!-- Secondary Column (3 cols) - Digestive Bitters -->
+<div class="lg:col-span-3 bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col justify-between">
+<div class="relative w-full h-56 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist luxury apothecary bottle labeled 'Digestive Bitters' next to sliced wild organic gentian root and dried citrus peel on raw plaster surface, warm natural light, serene wellness quarterly aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoyVBqFDw4HhEAIfxGYAvRUTiZBa9xAYbEbqQgS18pxRMLhcuGAfgN1wl_jrVh380FvKhrGFcEOq3rOuvzh1AtpKHxKJ3ReqkX_jP4T1af86NiYgo9d3idJBhXZ5l5Ux7-5t6UootMPKbOOW6rc5l1GnxDoqVtBGiM9mQ0oiBBsUMky_ZLn_HN-1dw6qj_TGbq5fWIeRQKCdRv-0sxsUBhzu_luPlSbuidwDz1bl6M2_K4N54xHR8Q"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 bg-surface/90 rounded font-label-caps text-[10px] text-forest-ink">Digestive Fire</span>
+</div>
+<div class="p-space-lg space-y-3 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline-sm text-headline-sm text-forest-ink">Digestive Bitters</h4>
+<span class="font-label-numeric text-label-numeric font-semibold text-forest-ink">$34.00</span>
+</div>
+<span class="font-subheading-editorial text-[14px] italic text-secondary block mb-2">HCL Stimulation &amp; Bile Motility</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Organic Gentian, Artichoke Leaf, and Baja bitter orange peel. Primes stomach acid and enzyme cascading prior to dense nutritional intake.
+              </p>
+</div>
+<button class="w-full py-2.5 bg-surface-container hover:bg-surface-container-high text-forest-ink font-label-button text-[13px] rounded transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add ($34)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Large Clinical Telehealth + DNA Kit Banner (Full Width Desktop Bar) -->
+<div class="bg-forest-ink text-linen-surface rounded-xl p-space-xl lg:p-space-2xl shadow-xl relative overflow-hidden">
+<!-- Ambient Glow -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center relative z-10">
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface/10 rounded-full">
+<span class="w-2 h-2 rounded-full bg-chartreuse-vitality"></span>
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-chartreuse-vitality">Clinical Diagnostics Tier</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-linen-surface font-light">
+              BiomeFx™ Whole Genome Stool Profile &amp; 90-Min Telehealth Protocol
+            </h3>
+<p class="font-body-md text-body-md text-linen-surface/80 max-w-3xl leading-relaxed">
+              Move beyond vague microbiome guessing. Includes direct home DNA sample collection, high-fidelity shotgun metagenomic sequencing, comprehensive 40-page biomarker dossier, and a 1-on-1 virtual therapeutic strategy with Abbie Jean Ciullo.
+            </p>
+<div class="flex flex-wrap gap-4 pt-2 text-linen-surface/70 font-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-chartreuse-vitality text-[16px]">check_circle</span> In-Home Sterile Swab Kit</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-chartreuse-vitality text-[16px]">check_circle</span> Keystone Pathogen &amp; Commensal Map</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-chartreuse-vitality text-[16px]">check_circle</span> Custom Herbal Tincture Protocol</span>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-start lg:items-end justify-center space-y-3 bg-deep-spruce/60 p-6 rounded-lg">
+<span class="font-label-caps text-label-caps text-herbaceous-mint uppercase">Comprehensive Package</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-linen-surface font-light">$395</span>
+<span class="font-body-sm text-body-sm text-linen-surface/60">USD complete</span>
+</div>
+<a class="w-full py-3.5 bg-chartreuse-vitality hover:bg-chartreuse-vitality/90 text-deep-spruce font-label-button text-label-button text-center rounded transition-colors font-bold shadow-md" data-path="biomefx-clinic" href="#">
+              Reserve Clinical Profile
+            </a>
+<span class="font-label-caps text-[10px] text-linen-surface/60 text-center w-full">Only 12 intake reservations available per lunar month.</span>
+</div>
+</div>
 </div>
 </div>
 </section>
-<!-- Editorial Storytelling: Meet Abbie Jean Ciullo -->
-<section class="w-full py-14 bg-parchment px-6 border-y border-sand-border/60">
-<div class="flex flex-col gap-6">
-<div class="flex flex-col gap-1">
-<span class="font-sans-clean text-[10px] tracking-[0.24em] text-earth-muted uppercase font-medium">The Herbalist &amp; Practitioner</span>
-<h2 class="font-serif-display text-[30px] text-botanical-dark font-normal">Abbie Jean Ciullo</h2>
-<span class="font-serif-editorial italic text-[14px] text-terracotta">Functional Nutritionist, CFNC, MCS-P</span>
+<!-- ==================== THE PRACTITIONER & LABORATORY (2-COLUMN) ==================== -->
+<section class="w-full py-space-4xl px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- Portrait Column (Left 5 cols) -->
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden shadow-xl bg-surface-container aspect-[3/4] relative">
+<img class="w-full h-full object-cover" data-alt="Editorial photographic portrait of founder Abbie Jean Ciullo in her serene Todos Santos botanical dispensary laboratory, wearing neutral linen workwear, inspecting dried botanical sprigs in clear glass apothecary glassware, surrounded by shelves of amber bottles and ceramic mortar and pestle, gentle natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiuqdnjc__s9NPYqI0W0q624kIzbx0w5KviBnHD00tarRifQnUip4hT7vSm0IndIDPTLflo6_ULDZLPLp2_oQJMS7hZ0awTPkHMDvvcemF1aLm-aoCpEZ3DzSU9qtRAtfZKtPW26giUbe7t5DTyfEOpCa5Jtllq6YlY0tzBcro--vnvOg0RGszq-7I4xKv4J-IUTqQQCyBpvyRJ450Sa0eWtbns0Q1W9EWZKCX_pXoZl_i5OdBq0ew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-deep-spruce/50 via-transparent to-transparent"></div>
 </div>
-<!-- Warm Studio Portrait -->
-<div class="relative w-full h-72 rounded-sm overflow-hidden bg-linen border border-sand-border/80 shadow-sm">
-<div class="w-full h-full bg-cover bg-center" data-alt="Portrait of functional nutritionist Abbie Jean Ciullo in a serene sunlit botanical studio surrounded by indoor plants and herbal apothecary jars smiling warmly in natural earthy clothing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAldpEepHp980D71HUlit8yapSJbuhtgwAxzG8185F5QHcCqNdswT4j03Ufh5wA4Jlj_z-AjAv2mbI5zTbdimFzUcdsnmJow9FhlvYrMjcdMKSfvpd1noSBwR6QZtbu4SG8TMrnEBH8ZkMO6otYy_5YUtStSRsWC8wWRZh09dfynOLCvlhAc18aZXyLjJ3iXZnm8rCWC9b2txrMNB1kG7msL9bE-vsFlkLIR6LwjHfKa_k4MjEfQtI8')"></div>
+<!-- Credential Pill -->
+<div class="absolute -bottom-5 -right-5 bg-surface p-space-md rounded-lg shadow-lg max-w-xs space-y-1">
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase block">Certified Clinical Credentials</span>
+<p class="font-body-sm text-body-sm text-forest-ink font-medium leading-tight">
+            CFNC • MCS-P • FMCHC Certified Functional Nutrition Clinician
+          </p>
 </div>
-<div class="flex flex-col gap-4">
-<p class="font-serif-editorial text-[17px] text-botanical-dark leading-relaxed italic">
-          “I founded Adaptogenesis in the sacred coastal desert of Baja California Sur to bridge the sacred intuition of plant medicine with modern metagenomic lab science. We do not suppress symptoms; we restore sovereign cellular vitality.”
+</div>
+<!-- Narrative Bio (Right 7 cols) -->
+<div class="lg:col-span-7 space-y-space-md pl-0 lg:pl-space-lg">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-widest block">The Custodian of Adaptogenesis</span>
+<h2 class="font-headline-lg text-headline-lg text-forest-ink leading-tight">
+          From Chronic Depletion to Clinical Sovereignty.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          “I spent seven years navigating the maze of sterile clinical offices—given autoimmune labels and pharmaceutical band-aids that left my vital spirit diminished. True healing only took root when I surrendered my synthetic remedies and apprenticed myself to the botanical masters of the Baja desert.”
         </p>
-<p class="font-serif-editorial text-[15px] text-earth-muted leading-relaxed">
-          Through custom clinical consultations and slow-macerated formulas, Abbie guides clients across North America into deep constitutional harmony.
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Today, Abbie bridges rigorous modern microbiome genomics with sacred folk herbal extraction. Each formula is compounded inside her Todos Santos apothecary laboratory using slow solar macerations and wild-harvested desert aromatics that support cellular membrane permeability and systemic nervous system regulation.
         </p>
+<div class="pt-space-xs grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="p-3 bg-surface-container rounded">
+<span class="font-label-numeric text-[22px] font-bold text-primary block leading-none">12+</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">Years Clinical Study</span>
 </div>
-<!-- Understated 4 Pillars -->
-<div class="grid grid-cols-2 gap-3 pt-2 border-t border-sand-border/60 font-serif-display text-[15px] text-botanical-dark">
-<div class="py-2 border-b border-sand-border/40 flex items-center gap-2">
-<span class="text-terracotta italic text-[14px]">I.</span>
-<span>Terrain Inquiry</span>
+<div class="p-3 bg-surface-container rounded">
+<span class="font-label-numeric text-[22px] font-bold text-primary block leading-none">840+</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">Custom Blends Formulated</span>
 </div>
-<div class="py-2 border-b border-sand-border/40 flex items-center gap-2">
-<span class="text-terracotta italic text-[14px]">II.</span>
-<span>BiomeFx Analysis</span>
-</div>
-<div class="py-2 border-b border-sand-border/40 flex items-center gap-2">
-<span class="text-terracotta italic text-[14px]">III.</span>
-<span>Botanical Blending</span>
-</div>
-<div class="py-2 border-b border-sand-border/40 flex items-center gap-2">
-<span class="text-terracotta italic text-[14px]">IV.</span>
-<span>1:1 Integration</span>
+<div class="p-3 bg-surface-container rounded">
+<span class="font-label-numeric text-[22px] font-bold text-primary block leading-none">100%</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant mt-1 block">Solar-Infused in BCS</span>
 </div>
 </div>
-</div>
-</section>
-<!-- Client Words / Organic Reverence -->
-<section class="w-full py-12 bg-linen px-6">
-<div class="flex flex-col gap-6 text-center items-center">
-<span class="font-sans-clean text-[10px] tracking-[0.25em] text-earth-muted uppercase font-medium">Client Journal Notes</span>
-<div class="max-w-md flex flex-col items-center gap-4">
-<span class="font-serif-display text-[32px] text-terracotta/50 leading-none">“</span>
-<p class="font-serif-editorial text-[18px] text-botanical-dark italic leading-relaxed -mt-4">
-          After years of navigating complex digestive symptoms, Abbie’s clinical insight and the Rise Elixir returned a lightness and clarity to my everyday routine that I had almost forgotten existed.
-        </p>
-<div class="flex flex-col items-center">
-<span class="font-sans-clean text-[11px] tracking-[0.16em] uppercase font-semibold text-botanical-dark">Elena Morales</span>
-<span class="font-serif-editorial italic text-[13px] text-earth-muted">Austin, Texas • Terrain Client</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Newsletter / The Apothecary Journal -->
-<section class="w-full py-12 bg-parchment-deep/50 px-6 border-t border-sand-border/60" id="apothecary-journal">
-<div class="bg-linen p-6 rounded-sm border border-sand-border shadow-[0_2px_12px_rgba(0,0,0,0.02)] flex flex-col gap-4">
-<div class="flex flex-col gap-1 text-center">
-<span class="font-sans-clean text-[10px] tracking-[0.22em] text-terracotta uppercase font-medium">The Apothecary Journal</span>
-<h3 class="font-serif-display text-[26px] text-botanical-dark font-normal">Receive Seasonal Harvest Notes</h3>
-<p class="font-serif-editorial italic text-[14px] text-earth-muted leading-relaxed mt-1">
-          Complimentary functional guidance: ‘6 Steps to Optimize Digestive Health’, seasonal botanical tincture releases, and Baja herbal dispatches.
-        </p>
-</div>
-<form class="flex flex-col gap-3 mt-2" onsubmit="event.preventDefault(); const btn=this.querySelector('button'); btn.innerText='Welcome to the Journal'; btn.classList.add('bg-terracotta');">
-<input class="h-11 px-4 bg-parchment/60 border border-sand-border text-soft-black placeholder:text-earth-muted/60 font-sans-clean text-[13px] rounded-sm outline-none focus:border-botanical-olive" placeholder="Your name" required="" type="text"/>
-<input class="h-11 px-4 bg-parchment/60 border border-sand-border text-soft-black placeholder:text-earth-muted/60 font-sans-clean text-[13px] rounded-sm outline-none focus:border-botanical-olive" placeholder="Your email address" required="" type="email"/>
-<button class="h-11 bg-botanical-olive text-[#FAF7F0] font-sans-clean text-[11px] tracking-[0.18em] uppercase font-medium rounded-sm hover:bg-botanical-dark transition-colors" type="submit">
-          Receive The Journal &amp; Guide
-        </button>
-</form>
-<span class="font-serif-editorial italic text-[11px] text-earth-muted text-center">
-        Quiet dispatches twice monthly. No noise, unsubscribe whenever.
-      </span>
-</div>
-</section>
-<!-- Discovery Consultation Anchor Section -->
-<section class="w-full py-12 bg-linen px-6" id="consult-section">
-<div class="flex flex-col gap-4 text-center items-center">
-<span class="font-sans-clean text-[10px] tracking-[0.22em] text-earth-muted uppercase font-medium">Clinical Practice</span>
-<h3 class="font-serif-display text-[28px] text-botanical-dark font-normal leading-snug">
-        Begin Your Terrain Consultation
-      </h3>
-<p class="font-serif-editorial text-[15px] text-earth-muted italic max-w-xs leading-relaxed">
-        Personalized 1-on-1 functional health partnerships incorporating clinical lab interpretation and custom botanical remedies.
-      </p>
-<a class="w-full h-12 bg-terracotta text-[#FFFDF9] font-sans-clean text-[11px] tracking-[0.18em] uppercase font-medium rounded-sm flex items-center justify-center hover:bg-terracotta-soft transition-colors mt-2" href="https://calendly.com" rel="noopener noreferrer" target="_blank">
-        Reserve Discovery Consultation
-      </a>
-<span class="font-sans-clean text-[10px] tracking-wider text-earth-muted/70 uppercase">Select monthly openings available</span>
-</div>
-</section>
-<!-- Luxury Boutique Footer -->
-<footer class="w-full bg-parchment py-12 px-6 border-t border-sand-border">
-<div class="flex flex-col gap-8">
-<div class="flex flex-col gap-2">
-<span class="font-serif-display text-[22px] tracking-[0.12em] text-botanical-dark uppercase font-light">Adaptogenesis</span>
-<p class="font-serif-editorial italic text-[14px] text-earth-muted">
-          Artisanal botanical dispensary and clinical gut terrain practice based in Todos Santos, Baja California Sur.
-        </p>
-</div>
-<div class="grid grid-cols-2 gap-6 text-[13px]">
-<div class="flex flex-col gap-2">
-<span class="font-sans-clean text-[10px] tracking-[0.2em] uppercase font-semibold text-botanical-dark">Apothecary</span>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Rise Elixir</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Digestive Bitters</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Cardon Flower Essence</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">BiomeFx Lab Kits</a>
-</div>
-<div class="flex flex-col gap-2">
-<span class="font-sans-clean text-[10px] tracking-[0.2em] uppercase font-semibold text-botanical-dark">Practice</span>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Abbie Jean Ciullo</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Private Mentorship</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Baja Terrain Retreats</a>
-<a class="font-serif-editorial text-[15px] text-earth-muted hover:text-terracotta transition-colors" href="#">Apothecary Journal</a>
-</div>
-</div>
-<div class="pt-6 border-t border-sand-border/60 flex flex-col gap-3">
-<p class="font-serif-editorial italic text-[11px] text-earth-muted/80 leading-relaxed">
-          *These statements have not been evaluated by the Food and Drug Administration. Our handcrafted formulas and functional protocols are designed for energetic and terrain balance, not to diagnose, treat, cure, or prevent disease.
-        </p>
-<span class="font-sans-clean text-[10px] tracking-[0.16em] text-earth-muted uppercase">
-          © Adaptogenesis. Todos Santos, B.C.S. All Rights Reserved.
-        </span>
-</div>
-</div>
-</footer>
-</main>
-<!-- Warm Organic Boutique Navigation Bar -->
-<nav class="fixed bottom-0 w-full z-50 pb-safe bg-linen/95 backdrop-blur-md border-t border-sand-border/80">
-<div class="flex justify-around items-center h-16 px-4">
-<a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-botanical-dark gap-0.5" data-path="discover-home" href="#">
-<span class="material-symbols-outlined text-[20px] font-light text-terracotta">eco</span>
-<span class="font-sans-clean text-[9px] tracking-[0.16em] uppercase font-medium">Apothecary</span>
-</a>
-<a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-earth-muted hover:text-botanical-dark transition-colors gap-0.5" data-path="shop-botanicals" href="collection.html">
-<span class="material-symbols-outlined text-[20px] font-light">liquor</span>
-<span class="font-sans-clean text-[9px] tracking-[0.16em] uppercase font-medium">Formulas</span>
-</a>
-<a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-earth-muted hover:text-botanical-dark transition-colors gap-0.5" data-path="consult-services" href="#consult-section">
-<span class="material-symbols-outlined text-[20px] font-light">assignment</span>
-<span class="font-sans-clean text-[9px] tracking-[0.16em] uppercase font-medium">Consult</span>
-</a>
-<a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-earth-muted hover:text-botanical-dark transition-colors gap-0.5" data-path="journal" href="#apothecary-journal">
-<span class="material-symbols-outlined text-[20px] font-light">auto_stories</span>
-<span class="font-sans-clean text-[9px] tracking-[0.16em] uppercase font-medium">Journal</span>
+<div class="pt-space-xs">
+<a class="font-label-button text-label-button text-primary hover:text-forest-ink inline-flex items-center gap-2 group transition-colors" data-path="about-abbie" href="#">
+<span>Read Abbie's Clinical Autobiography</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
 </div>
-</nav>
-</body></html>
+</div>
+</div>
+</section>
+<!-- ==================== CLIENT TERRAIN TESTIMONIALS (3-COLUMN GRID) ==================== -->
+<section class="w-full bg-surface-container-low py-space-4xl px-6 lg:px-12">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="text-center max-w-2xl mx-auto space-y-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">Observed Clinical Recoveries</span>
+<h2 class="font-headline-lg text-headline-lg text-forest-ink">Voices from the Regenerated Soil</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface p-space-xl rounded-xl shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-forest-ink italic leading-relaxed">
+              “The BiomeFx protocol revealed severe mucosal degradation that three previous functional MDs had missed entirely. The Rise Elixir and customized bitter regime rebuilt my digestion within six weeks.”
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-muted-border/30">
+<div>
+<span class="font-headline-sm text-[16px] text-forest-ink block">Elena Rostova</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Architect, San Francisco</span>
+</div>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-1 rounded">Gut Dysbiosis Case</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface p-space-xl rounded-xl shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-forest-ink italic leading-relaxed">
+              “As an ultra-endurance athlete, my adrenals were wrecked. The Deep Night Rest tincture completely transformed my deep sleep metrics on my Oura ring from 30 minutes to over 2 hours every night.”
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-muted-border/30">
+<div>
+<span class="font-headline-sm text-[16px] text-forest-ink block">Marcus Thorne</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Trail Runner, Boulder</span>
+</div>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-1 rounded">Adrenal Exhaustion</span>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface p-space-xl rounded-xl shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-forest-ink italic leading-relaxed">
+              “Abbie is not merely an herbalist; she is a master of living systems. The dispensary formulations feel deeply alive. You can taste the integrity of the soil and the Baja sun in every single drop.”
+            </p>
+</div>
+<div class="pt-4 flex items-center justify-between border-t border-muted-border/30">
+<div>
+<span class="font-headline-sm text-[16px] text-forest-ink block">Clara de la Vega</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Sommelier, Todos Santos</span>
+</div>
+<span class="font-label-caps text-[10px] text-secondary bg-surface-container px-2 py-1 rounded">Cellular Vitality</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== APOTHECARY JOURNAL PREVIEW ==================== -->
+<section class="w-full py-space-4xl px-6 lg:px-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-space-xl">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block mb-1">Field Dispatches &amp; Monographs</span>
+<h2 class="font-headline-lg text-headline-lg text-forest-ink">The Apothecary Journal</h2>
+</div>
+<a class="font-label-button text-label-button text-primary hover:text-forest-ink inline-flex items-center gap-2 group transition-colors" data-path="apothecary-journal" href="#">
+<span>Read All Field Notes</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Article 1 -->
+<article class="space-y-3 group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up shot of wild Baja desert cardon cactus with intricate spine geometry under early golden morning sun in Todos Santos, organic botanical editorial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv3xIesT0cjQYESB_Ps1sLqLCRv203qY4nbP_pLrPiUc3Ya2M8Ca6P9TOjjB3xWXeccG77lP3XbnI_83NlkdhKuD0UZI-8J1zSfSg1eoaelitM3aSn7ak6b1rsWWdBFDzdtaivfROzwZnvaWDa2bf8mc67vz2ycQSDULk0FvTwxVZojh6XHE8qvJ3JkJpwsw6i9n0yGtPW-sxlD7QopWan4UKuNEdQgwQe6ACrwbt2WMpj-ApSr7Ll"/>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[11px] text-secondary uppercase">Monograph No. 12 • Botany</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-ink group-hover:text-primary transition-colors">
+            Desert Pachycereus: How Cardon Adaptogens Stabilize Cellular Osmolarity
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Examining the mucilage reservoirs of Mexico's oldest desert cacti and their role in human mucosal restoration.
+          </p>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="space-y-3 group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Laboratory glassware on clean light wooden bench with vibrant green micro-algae extract and pipette in a sunlit modern apothecary clinic, crisp natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNBFqe61D-bBoarD02MRuP_9fXH0_lUIVlsw_-qlToes-PK0N4BeYnmDav9s20D4PK0P0x0Ko3n1ibnbXSo6gIHjY_O0NPE_5LHzOrn9d9_eNUVvR3eeYNMYwMY7u0xZz1t0OOwCA-6NY3pA5s0L3ML6rCpqiGMrAvY8mYPali9nWxtJWz4bSuv0NRiiBHJ5nOttV7dEz2eWBcCYl8k3QXw6i0pW4exlp2byhRptnkW3r4catx-6Gb"/>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[11px] text-secondary uppercase">Metagenomics • Research</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-ink group-hover:text-primary transition-colors">
+            Short-Chain Fatty Acids and the Vagus Nerve: Why Gut Permeability Dictates Anxiety
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            The biological mechanism connecting butyrate deficiencies with chronic nervous system hyper-arousal.
+          </p>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="space-y-3 group cursor-pointer">
+<div class="aspect-[16/10] overflow-hidden rounded-lg bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Miron violet glass jars sealed with beeswax cord on rustic stone kitchen table with wild medicinal roots drying on linen cloths in Todos Santos, editorial stillness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcot5y2HJNbnzmcy5K0zLlJpQy-gH5gyPm--0dOgbI9u1XDN2aHp0ttWB_NKp7Md9ySsZv-jcW4MIXTgw2yw2EpgpdfnStD3szM8J6jVTnAzzkZ3kvIkx_GE4GscQCPATZNPnQXRISlmKtXp-49cRYQbG9-5tUDXM9tyNTgICJAkPBPXzUXpouAap6I98RHnGfTRapytU8iMvWAfliABMzJkxJAWiTvg0cjwxFOa1H5AUxRM_YDnOd"/>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[11px] text-secondary uppercase">Harvest Notes • Winter 2025</span>
+<h3 class="font-headline-sm text-headline-sm text-forest-ink group-hover:text-primary transition-colors">
+            Preserving the Subtle Prana: Why We Solely Decant in Biophotonic Glass
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            A deep exploration into solar light physics, visible spectrum decay, and maintaining active enzyme vitality.
+          </p>
+</div>
+</article>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive handling for Quick Add button feedback
+  document.querySelectorAll('button').forEach(btn => {
+    if (btn.innerText.includes('Add')) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const originalText = this.innerHTML;
+        this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span>Added to Bag</span>';
+        this.classList.add('bg-primary');
+        this.classList.add('text-on-primary');
+        
+        // Update bag counter in shell header if present
+        const bagBadge = document.querySelector('header .bg-tertiary');
+        if (bagBadge) {
+          let count = parseInt(bagBadge.textContent || '0');
+          bagBadge.textContent = count + 1;
+        }
+
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('bg-primary');
+          this.classList.remove('text-on-primary');
+        }, 1600);
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-3xl"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl pb-space-2xl"><div class="lg:col-span-5 space-y-space-md"><span class="font-subheading-editorial text-subheading-editorial text-secondary italic block">From Todos Santos with Reverence</span><h2 class="font-headline-md text-headline-md text-forest-ink">The Adaptogenesis Manifesto</h2><p class="font-body-md text-body-md text-on-surface-variant pr-8 leading-relaxed">Harmonizing functional diagnostic accuracy with primal desert adaptogens. Formulated in Baja California Sur through certified soil-to-extract protocols designed to restore biological resilience, endocrine stability, and cellular vitality.</p><div class="pt-space-xs"><span class="font-label-caps text-label-caps text-on-surface-variant block mb-2">CLINICAL EXCELLENCE &amp; SOURCING</span><div class="flex flex-wrap gap-2"><span class="px-3 py-1 bg-surface-container text-secondary rounded-full font-label-caps text-label-caps">cGMP Certified</span><span class="px-3 py-1 bg-surface-container text-secondary rounded-full font-label-caps text-label-caps">Third-Party HPLC Verified</span><span class="px-3 py-1 bg-surface-container text-secondary rounded-full font-label-caps text-label-caps">Biodynamic Wildcraft</span></div></div></div><div class="lg:col-span-7"><div class="bg-surface p-space-xl rounded-xl shadow-[0_4px_20px_-2px_rgba(27,42,34,0.05)]"><h3 class="font-headline-sm text-headline-sm text-forest-ink mb-1">Seasonal Harvest Notes</h3><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Receive monograph release previews, clinician dispatches from Todos Santos, and small-batch extraction reservations.</p><form class="flex flex-col sm:flex-row gap-3"><input class="flex-1 px-4 py-3 bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-md text-body-md rounded focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Enter your clinical or personal email" type="email"/><button class="px-6 py-3 bg-tertiary hover:bg-tertiary-container hover:text-on-tertiary text-on-tertiary font-label-button text-label-button transition-colors rounded" type="submit">Subscribe</button></form></div></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg py-space-xl"><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps text-forest-ink uppercase tracking-wider">The Dispensary</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Nervine &amp; Adrenal Tinctures</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Baja Marine Phytoplankton</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Desert Botanical Elixirs</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Micro-batch Raw Honey Infusions</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Dispensing Lab Protocol</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps text-forest-ink uppercase tracking-wider">Clinical Practice</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">BiomeFx™ Metagenomics</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Virtual Consultations</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Todos Santos Clinic In-Person</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Practitioner Account Portal</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Custom Formula Compounding</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps text-forest-ink uppercase tracking-wider">Terrain Education</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">The Endocrine Matrix Monograph</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Baja Bioregional Flora Index</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Cellular Hydration Protocols</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Clinical Whitepapers</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Apothecary Audio Archives</li></ul></div><div class="space-y-space-sm"><h4 class="font-label-caps text-label-caps text-forest-ink uppercase tracking-wider">Governance &amp; Care</h4><ul class="space-y-2"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Certificates of Analysis (COA)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">COFEPRIS &amp; FDA Good Practices</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Baja Dispatch &amp; Cold Storage</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Privacy &amp; Medical Disclaimers</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary cursor-pointer">Accessibility Statement</li></ul></div></div><div class="pt-space-lg mt-space-md space-y-4"><p class="font-body-sm text-body-sm text-on-surface-variant text-justify leading-relaxed opacity-75">*FDA Disclaimer: Statements made on this platform have not been evaluated by the Food and Drug Administration or COFEPRIS. These formulations, botanical extracts, and clinical frameworks are not intended to diagnose, treat, cure, or prevent any medical condition. Consult your licensed healthcare provider prior to undertaking any functional botanical therapeutic protocol.</p><div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 text-on-surface-variant font-body-sm text-body-sm"><p>© 2025 Adaptogenesis LLC. Todos Santos, Baja California Sur, Mexico. Handcrafted in harmony with the lunar harvest.</p><div class="flex items-center gap-6"><span class="hover:text-primary cursor-pointer font-label-caps text-label-caps">INSTAGRAM</span><span class="hover:text-primary cursor-pointer font-label-caps text-label-caps">SUBSTACK</span><span class="hover:text-primary cursor-pointer font-label-caps text-label-caps">PRACTITIONER ACCESS</span></div></div></div></div></footer></body></html>
